@@ -201,7 +201,11 @@
       "url": "https://raw.githubusercontent.com/DOI-DO/dcat-us/main/shacl/dcat-us_3.0_shacl_shapes.ttl",
       "kind_hint": "ShapeGraph",
       "retrieval_via_mirror": true,
-      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher.",
+      "source_repo_archived": true,
+      "source_repo_archived_on": "2026-04-28",
+      "live_successor_repo": "https://github.com/GSA/dcat-us",
+      "provenance_note": "Retrieved from github.com/DOI-DO/dcat-us, which was ARCHIVED on 28 April 2026 and is read-only. The live home is github.com/GSA/dcat-us, maintained by the Data.gov team on a semi-annual cycle. As of 16 August 2026 the live repository contains no SHACL directory and no Turtle files at all, and nara-restrictions.ttl sits under DEPRECATED/vocabularies. These two assets are therefore assessed as published in an archived source and are superseded; DCAT-US v3.0's canonical validation artefact is now JSON Schema."
     },
     {
       "id": "nara-restrictions",
@@ -211,7 +215,11 @@
       "url": "https://raw.githubusercontent.com/DOI-DO/dcat-us/main/vocabularies/nara-restrictions.ttl",
       "kind_hint": "SkosScheme",
       "retrieval_via_mirror": true,
-      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher.",
+      "source_repo_archived": true,
+      "source_repo_archived_on": "2026-04-28",
+      "live_successor_repo": "https://github.com/GSA/dcat-us",
+      "provenance_note": "Retrieved from github.com/DOI-DO/dcat-us, which was ARCHIVED on 28 April 2026 and is read-only. The live home is github.com/GSA/dcat-us, maintained by the Data.gov team on a semi-annual cycle. As of 16 August 2026 the live repository contains no SHACL directory and no Turtle files at all, and nara-restrictions.ttl sits under DEPRECATED/vocabularies. These two assets are therefore assessed as published in an archived source and are superseded; DCAT-US v3.0's canonical validation artefact is now JSON Schema."
     },
     {
       "id": "sweet",

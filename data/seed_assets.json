@@ -1,0 +1,258 @@
+{
+  "_comment": "US federal semantic assets. URLs in this file were corrected against live probes on 2026-08-16; see results/probe_results.json for the observed facts and BUILD_REPORT.md for assets that were sought but not obtainable as RDF.",
+  "assets": [
+    {
+      "id": "loc-relators",
+      "agency": "Library of Congress",
+      "name": "MARC Relator Terms",
+      "namespace": "http://id.loc.gov/vocabulary/relators/",
+      "url": "https://id.loc.gov/vocabulary/relators.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-countries",
+      "agency": "Library of Congress",
+      "name": "MARC Countries",
+      "namespace": "http://id.loc.gov/vocabulary/countries/",
+      "url": "https://id.loc.gov/vocabulary/countries.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-languages",
+      "agency": "Library of Congress",
+      "name": "MARC Languages",
+      "namespace": "http://id.loc.gov/vocabulary/languages/",
+      "url": "https://id.loc.gov/vocabulary/languages.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-geographicareas",
+      "agency": "Library of Congress",
+      "name": "MARC Geographic Areas",
+      "namespace": "http://id.loc.gov/vocabulary/geographicAreas/",
+      "url": "https://id.loc.gov/vocabulary/geographicAreas.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-iso639-2",
+      "agency": "Library of Congress",
+      "name": "ISO 639-2 Languages",
+      "namespace": "http://id.loc.gov/vocabulary/iso639-2/",
+      "url": "https://id.loc.gov/vocabulary/iso639-2.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-iso639-5",
+      "agency": "Library of Congress",
+      "name": "ISO 639-5 Language Families",
+      "namespace": "http://id.loc.gov/vocabulary/iso639-5/",
+      "url": "https://id.loc.gov/vocabulary/iso639-5.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-preservation",
+      "agency": "Library of Congress",
+      "name": "PREMIS Preservation Vocabularies",
+      "namespace": "http://id.loc.gov/vocabulary/preservation/",
+      "url": "https://id.loc.gov/vocabulary/preservation.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-carriers",
+      "agency": "Library of Congress",
+      "name": "RDA Carrier Types",
+      "namespace": "http://id.loc.gov/vocabulary/carriers/",
+      "url": "https://id.loc.gov/vocabulary/carriers.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-contentTypes",
+      "agency": "Library of Congress",
+      "name": "RDA Content Types",
+      "namespace": "http://id.loc.gov/vocabulary/contentTypes/",
+      "url": "https://id.loc.gov/vocabulary/contentTypes.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-mediaTypes",
+      "agency": "Library of Congress",
+      "name": "RDA Media Types",
+      "namespace": "http://id.loc.gov/vocabulary/mediaTypes/",
+      "url": "https://id.loc.gov/vocabulary/mediaTypes.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-graphicMaterials",
+      "agency": "Library of Congress",
+      "name": "Thesaurus for Graphic Materials",
+      "namespace": "http://id.loc.gov/vocabulary/graphicMaterials/",
+      "url": "https://id.loc.gov/vocabulary/graphicMaterials.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-ethnographicTerms",
+      "agency": "Library of Congress",
+      "name": "Ethnographic Thesaurus",
+      "namespace": "http://id.loc.gov/vocabulary/ethnographicTerms/",
+      "url": "https://id.loc.gov/vocabulary/ethnographicTerms.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "loc-madsrdf",
+      "agency": "Library of Congress",
+      "name": "MADS/RDF ontology",
+      "namespace": "http://www.loc.gov/mads/rdf/v1#",
+      "url": "https://id.loc.gov/ontologies/madsrdf/v1.rdf",
+      "kind_hint": "OwlOntology"
+    },
+    {
+      "id": "loc-premis3",
+      "agency": "Library of Congress",
+      "name": "PREMIS 3 ontology",
+      "namespace": "http://www.loc.gov/premis/rdf/v3/",
+      "url": "https://id.loc.gov/ontologies/premis-3-0-0.rdf",
+      "kind_hint": "OwlOntology"
+    },
+    {
+      "id": "loc-bibframe",
+      "agency": "Library of Congress",
+      "name": "BIBFRAME 2.x vocabulary",
+      "namespace": "http://id.loc.gov/ontologies/bibframe/",
+      "url": "https://id.loc.gov/ontologies/bibframe.rdf",
+      "kind_hint": "OwlOntology"
+    },
+    {
+      "id": "nlm-mesh-vocab",
+      "agency": "National Library of Medicine",
+      "name": "MeSH RDF vocabulary",
+      "namespace": "http://id.nlm.nih.gov/mesh/vocab#",
+      "url": "https://id.nlm.nih.gov/mesh/vocab",
+      "kind_hint": "OwlOntology"
+    },
+    {
+      "id": "nasa-gcmd-science",
+      "agency": "NASA",
+      "name": "GCMD Science Keywords",
+      "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+      "url": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords?format=rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "nasa-gcmd-platforms",
+      "agency": "NASA",
+      "name": "GCMD Platforms",
+      "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+      "url": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms?format=rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "nasa-gcmd-instruments",
+      "agency": "NASA",
+      "name": "GCMD Instruments",
+      "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+      "url": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments?format=rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "nasa-gcmd-providers",
+      "agency": "NASA",
+      "name": "GCMD Providers",
+      "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+      "url": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/providers?format=rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "usgs-thesaurus",
+      "agency": "USGS",
+      "name": "USGS Thesaurus",
+      "namespace": "https://apps.usgs.gov/thesaurus/",
+      "url": "https://apps.usgs.gov/thesaurus/download/USGSThesaurus.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "usgs-geographic",
+      "agency": "USGS",
+      "name": "USGS Common Geographic Areas",
+      "namespace": "https://apps.usgs.gov/thesaurus/",
+      "url": "https://apps.usgs.gov/thesaurus/download/CommonGeographicAreas.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "usda-nalt",
+      "agency": "USDA National Agricultural Library",
+      "name": "NAL Agricultural Thesaurus (full)",
+      "namespace": "https://lod.nal.usda.gov/nalt/",
+      "url": "https://lod.nal.usda.gov/rest/v1/nalt/data?format=text/turtle",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "noaa-paleo",
+      "agency": "NOAA NCEI",
+      "name": "Paleoenvironmental Thesaurus",
+      "namespace": "https://www.ncei.noaa.gov/access/paleo-search/skos/",
+      "url": "https://www.ncei.noaa.gov/access/paleo-search/skos/past-thesaurus.rdf",
+      "kind_hint": "SkosScheme"
+    },
+    {
+      "id": "dcat-us-shacl",
+      "agency": "GSA / CDO Council",
+      "name": "DCAT-US 3.0 SHACL shapes",
+      "namespace": "http://resources.data.gov/vocab/dcat-us/v3/",
+      "url": "https://raw.githubusercontent.com/DOI-DO/dcat-us/main/shacl/dcat-us_3.0_shacl_shapes.ttl",
+      "kind_hint": "ShapeGraph",
+      "retrieval_via_mirror": true,
+      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+    },
+    {
+      "id": "nara-restrictions",
+      "agency": "National Archives (via DCAT-US)",
+      "name": "NARA access restrictions vocabulary",
+      "namespace": "http://resources.data.gov/vocab/nara/",
+      "url": "https://raw.githubusercontent.com/DOI-DO/dcat-us/main/vocabularies/nara-restrictions.ttl",
+      "kind_hint": "SkosScheme",
+      "retrieval_via_mirror": true,
+      "mirror_note": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+    },
+    {
+      "id": "sweet",
+      "agency": "NASA JPL origin, ESIP maintained",
+      "name": "SWEET Earth and Environmental Terminology",
+      "namespace": "http://sweetontology.net/",
+      "url": "http://sweetontology.net/sweetAll.ttl",
+      "kind_hint": "OwlOntology",
+      "federal_domain": false
+    },
+    {
+      "id": "nci-thesaurus",
+      "agency": "National Cancer Institute",
+      "name": "NCI Thesaurus OWL",
+      "namespace": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#",
+      "url": "https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Thesaurus.OWL.zip",
+      "kind_hint": "OwlOntology",
+      "archive": "zip"
+    }
+  ],
+  "sought_but_not_rdf": [
+    {
+      "id": "niemopen",
+      "agency": "NIEMOpen (OASIS Open Project)",
+      "name": "NIEM 6.0 reference model",
+      "finding": "The normative model is XSD. The only RDF-adjacent artefact in github.com/niemopen/niem-model is a single JSON-LD context file of 5,418 bytes at json-ld/context.json. No OWL or RDF serialisation of the model itself was found.",
+      "checked": "2026-08-16"
+    },
+    {
+      "id": "epa-srs",
+      "agency": "EPA",
+      "name": "Substance Registry Services",
+      "finding": "Requesting RDF from https://sor.epa.gov/sor_internet/registry/substreg/ returns HTML. No RDF representation was located.",
+      "checked": "2026-08-16"
+    },
+    {
+      "id": "nist-oscal",
+      "agency": "NIST",
+      "name": "OSCAL",
+      "finding": "Published as XML and JSON schemas. Structured and machine readable, but not RDF, and therefore out of scope for a battery whose checks are defined over RDF graphs.",
+      "checked": "2026-08-16"
+    }
+  ]
+}

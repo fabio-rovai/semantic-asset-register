@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Semantic Asset Register: a reproducible quality assessment of US federal published vocabularies"
+message: "If you use this register or its check catalogue, please cite it."
+type: dataset
+authors:
+  - family-names: Rovai
+    given-names: Fabio
+    affiliation: "Kampakis and Co Ltd, trading as The Tesseract Academy"
+    email: fabio@thetesseractacademy.com
+repository-code: "https://github.com/fabio-rovai/semantic-asset-register"
+abstract: >-
+  An open, re-runnable audit of the machine-readable semantic assets published by
+  United States federal agencies. The register harvests each asset from the URL
+  its publisher advertises, records the retrieval as a hashed snapshot, and runs
+  a catalogue of 25 checks over it. Every check names the authority it derives
+  from and declares whether it is normative, meaning a failure violates a
+  published specification, or conventional, meaning a failure departs from a
+  community practice the publisher never agreed to. Findings are expressed as
+  W3C EARL assertions, so that inapplicable checks are recorded as inapplicable
+  rather than as failures.
+keywords:
+  - ontology evaluation
+  - ontology quality
+  - SKOS
+  - OWL
+  - linked data
+  - open government data
+  - EARL
+  - semantic web
+license: CC-BY-4.0
+version: 0.1.0
+date-released: "2026-08-16"

@@ -1,0 +1,729 @@
+asset,agency,check,outcome,affected,population,example,info
+loc-relators,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-relators,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-relators,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-relators,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-relators,Library of Congress,SAR-P03,passed,,,,
+loc-relators,Library of Congress,SAR-P01,passed,,1846,,parsed 1846 triples as xml
+loc-relators,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-relators,Library of Congress,SAR-L04,passed,0,1,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-relators,Library of Congress,SAR-L05,passed,0,0,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-relators,Library of Congress,SAR-L06,passed,0,0,,S14: no more than one prefLabel per language tag
+loc-relators,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-relators,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-relators,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-relators,Library of Congress,SAR-D01,failed,305,305,http://id.loc.gov/vocabulary/relators/rce,
+loc-relators,Library of Congress,SAR-D02,failed,305,305,http://id.loc.gov/vocabulary/relators/rce,
+loc-relators,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-relators,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-relators,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-relators,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-relators,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-relators,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-relators,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-relators,Library of Congress,SAR-I02,failed,1,17,http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember,1 of 17 referenced external terms did not resolve
+loc-relators,Library of Congress,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+loc-relators,Library of Congress,SAR-L02,cantTell,,,,reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-relators-reasoned.owl
+loc-relators,Library of Congress,SAR-L03,cantTell,,,,reasoner exited 1
+loc-countries,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-countries,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-countries,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-countries,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-countries,Library of Congress,SAR-P03,passed,,,,
+loc-countries,Library of Congress,SAR-P01,passed,,3027,,parsed 3027 triples as xml
+loc-countries,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-countries,Library of Congress,SAR-L04,passed,0,335,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-countries,Library of Congress,SAR-L05,passed,0,334,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-countries,Library of Congress,SAR-L06,passed,0,334,,S14: no more than one prefLabel per language tag
+loc-countries,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-countries,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-countries,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-countries,Library of Congress,SAR-D01,passed,0,334,,
+loc-countries,Library of Congress,SAR-D02,failed,334,334,http://id.loc.gov/vocabulary/countries/xj,
+loc-countries,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-countries,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-countries,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-countries,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-countries,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-countries,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-countries,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-countries,Library of Congress,SAR-I02,passed,0,17,,0 of 17 referenced external terms did not resolve
+loc-countries,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-countries,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-countries,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-languages,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-languages,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-languages,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-languages,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-languages,Library of Congress,SAR-P03,passed,,,,
+loc-languages,Library of Congress,SAR-P01,passed,,6308,,parsed 6308 triples as xml
+loc-languages,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-languages,Library of Congress,SAR-L04,passed,0,486,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-languages,Library of Congress,SAR-L05,passed,0,485,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-languages,Library of Congress,SAR-L06,passed,0,485,,S14: no more than one prefLabel per language tag
+loc-languages,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-languages,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-languages,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-languages,Library of Congress,SAR-D01,passed,0,485,,
+loc-languages,Library of Congress,SAR-D02,failed,485,485,http://id.loc.gov/vocabulary/languages/mga,
+loc-languages,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-languages,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-languages,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-languages,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-languages,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-languages,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-languages,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-languages,Library of Congress,SAR-I02,passed,0,17,,0 of 17 referenced external terms did not resolve
+loc-languages,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-languages,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-languages,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-geographicareas,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-geographicareas,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-geographicareas,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-geographicareas,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-geographicareas,Library of Congress,SAR-P03,passed,,,,
+loc-geographicareas,Library of Congress,SAR-P01,passed,,291,,parsed 291 triples as xml
+loc-geographicareas,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-geographicareas,Library of Congress,SAR-L04,passed,0,31,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-geographicareas,Library of Congress,SAR-L05,passed,0,30,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-geographicareas,Library of Congress,SAR-L06,passed,0,30,,S14: no more than one prefLabel per language tag
+loc-geographicareas,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-geographicareas,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-geographicareas,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-geographicareas,Library of Congress,SAR-D01,passed,0,30,,
+loc-geographicareas,Library of Congress,SAR-D02,failed,30,30,http://id.loc.gov/vocabulary/geographicAreas/s,
+loc-geographicareas,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-geographicareas,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-geographicareas,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-geographicareas,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-geographicareas,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-geographicareas,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-geographicareas,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-geographicareas,Library of Congress,SAR-I02,passed,0,17,,0 of 17 referenced external terms did not resolve
+loc-geographicareas,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-geographicareas,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-geographicareas,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-2,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-iso639-2,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-iso639-2,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-iso639-2,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-iso639-2,Library of Congress,SAR-P03,passed,,,,
+loc-iso639-2,Library of Congress,SAR-P01,passed,,8580,,parsed 8580 triples as xml
+loc-iso639-2,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-iso639-2,Library of Congress,SAR-L04,passed,0,508,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-iso639-2,Library of Congress,SAR-L05,passed,0,507,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-iso639-2,Library of Congress,SAR-L06,failed,507,507,http://id.loc.gov/vocabulary/iso639-2/jrb,S14: no more than one prefLabel per language tag
+loc-iso639-2,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-iso639-2,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-iso639-2,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-iso639-2,Library of Congress,SAR-D01,passed,0,507,,
+loc-iso639-2,Library of Congress,SAR-D02,failed,507,507,http://id.loc.gov/vocabulary/iso639-2/jrb,
+loc-iso639-2,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-iso639-2,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-iso639-2,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-iso639-2,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-iso639-2,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-iso639-2,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-iso639-2,Library of Congress,SAR-I01,passed,5,,http://www.loc.gov/mads/rdf/v1#Language,5 distinct external vocabulary terms referenced
+loc-iso639-2,Library of Congress,SAR-I02,passed,0,5,,"0 of 5 referenced external terms did not resolve; 1 referenced namespace(s) are not absolute HTTP URIs, e.g. //www.loc.gov/mads/rdf/v1#"
+loc-iso639-2,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-2,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-2,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-5,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-iso639-5,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-iso639-5,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-iso639-5,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-iso639-5,Library of Congress,SAR-P03,passed,,,,
+loc-iso639-5,Library of Congress,SAR-P01,passed,,333,,parsed 333 triples as xml
+loc-iso639-5,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-iso639-5,Library of Congress,SAR-L04,passed,0,27,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-iso639-5,Library of Congress,SAR-L05,passed,0,26,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-iso639-5,Library of Congress,SAR-L06,passed,0,26,,S14: no more than one prefLabel per language tag
+loc-iso639-5,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-iso639-5,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-iso639-5,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-iso639-5,Library of Congress,SAR-D01,passed,0,26,,
+loc-iso639-5,Library of Congress,SAR-D02,failed,26,26,http://id.loc.gov/vocabulary/iso639-5/jpx,
+loc-iso639-5,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-iso639-5,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-iso639-5,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-iso639-5,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-iso639-5,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-iso639-5,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-iso639-5,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-iso639-5,Library of Congress,SAR-I02,passed,0,17,,0 of 17 referenced external terms did not resolve
+loc-iso639-5,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-5,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-iso639-5,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-preservation,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-preservation,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-preservation,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-preservation,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-preservation,Library of Congress,SAR-P03,passed,,,,
+loc-preservation,Library of Congress,SAR-P01,passed,,152,,parsed 152 triples as xml
+loc-preservation,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-preservation,Library of Congress,SAR-L04,passed,0,31,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-preservation,Library of Congress,SAR-L05,passed,0,0,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-preservation,Library of Congress,SAR-L06,passed,0,0,,S14: no more than one prefLabel per language tag
+loc-preservation,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-preservation,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-preservation,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-preservation,Library of Congress,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+loc-preservation,Library of Congress,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+loc-preservation,Library of Congress,SAR-D03,passed,30,31,http://id.loc.gov/vocabulary/preservation/copyrightStatus,"1/31 titled, 1/31 described"
+loc-preservation,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-preservation,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-preservation,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-preservation,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-preservation,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-preservation,Library of Congress,SAR-I01,passed,13,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,13 distinct external vocabulary terms referenced
+loc-preservation,Library of Congress,SAR-I02,passed,0,13,,0 of 13 referenced external terms did not resolve
+loc-preservation,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-preservation,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-preservation,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-carriers,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-carriers,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-carriers,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-carriers,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-carriers,Library of Congress,SAR-P03,passed,,,,
+loc-carriers,Library of Congress,SAR-P01,passed,,247,,parsed 247 triples as xml
+loc-carriers,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-carriers,Library of Congress,SAR-L04,passed,0,1,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-carriers,Library of Congress,SAR-L05,passed,0,0,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-carriers,Library of Congress,SAR-L06,passed,0,0,,S14: no more than one prefLabel per language tag
+loc-carriers,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-carriers,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-carriers,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-carriers,Library of Congress,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+loc-carriers,Library of Congress,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+loc-carriers,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-carriers,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-carriers,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-carriers,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-carriers,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-carriers,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-carriers,Library of Congress,SAR-I01,passed,17,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,17 distinct external vocabulary terms referenced
+loc-carriers,Library of Congress,SAR-I02,failed,1,17,http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember,1 of 17 referenced external terms did not resolve
+loc-carriers,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-carriers,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-carriers,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-contentTypes,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-contentTypes,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-contentTypes,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-contentTypes,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-contentTypes,Library of Congress,SAR-P03,passed,,,,
+loc-contentTypes,Library of Congress,SAR-P01,passed,,171,,parsed 171 triples as xml
+loc-contentTypes,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-contentTypes,Library of Congress,SAR-L04,passed,0,1,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-contentTypes,Library of Congress,SAR-L05,passed,0,0,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-contentTypes,Library of Congress,SAR-L06,passed,0,0,,S14: no more than one prefLabel per language tag
+loc-contentTypes,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-contentTypes,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-contentTypes,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-contentTypes,Library of Congress,SAR-D01,failed,24,24,http://id.loc.gov/vocabulary/contentTypes/snd,
+loc-contentTypes,Library of Congress,SAR-D02,failed,24,24,http://id.loc.gov/vocabulary/contentTypes/snd,
+loc-contentTypes,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-contentTypes,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-contentTypes,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-contentTypes,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-contentTypes,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-contentTypes,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-contentTypes,Library of Congress,SAR-I01,passed,18,,http://bibframe.org/vocab/Category,18 distinct external vocabulary terms referenced
+loc-contentTypes,Library of Congress,SAR-I02,failed,1,18,http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember,1 of 18 referenced external terms did not resolve
+loc-contentTypes,Library of Congress,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+loc-contentTypes,Library of Congress,SAR-L02,cantTell,,,,reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-contentTypes-reasoned.owl
+loc-contentTypes,Library of Congress,SAR-L03,cantTell,,,,reasoner exited 1
+loc-mediaTypes,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-mediaTypes,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-mediaTypes,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-mediaTypes,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-mediaTypes,Library of Congress,SAR-P03,passed,,,,
+loc-mediaTypes,Library of Congress,SAR-P01,passed,,83,,parsed 83 triples as xml
+loc-mediaTypes,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-mediaTypes,Library of Congress,SAR-L04,passed,0,1,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-mediaTypes,Library of Congress,SAR-L05,passed,0,0,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-mediaTypes,Library of Congress,SAR-L06,passed,0,0,,S14: no more than one prefLabel per language tag
+loc-mediaTypes,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-mediaTypes,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-mediaTypes,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-mediaTypes,Library of Congress,SAR-D01,failed,10,10,http://id.loc.gov/vocabulary/mediaTypes/h,
+loc-mediaTypes,Library of Congress,SAR-D02,failed,10,10,http://id.loc.gov/vocabulary/mediaTypes/h,
+loc-mediaTypes,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-mediaTypes,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-mediaTypes,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-mediaTypes,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-mediaTypes,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-mediaTypes,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-mediaTypes,Library of Congress,SAR-I01,passed,18,,http://bibframe.org/vocab/Category,18 distinct external vocabulary terms referenced
+loc-mediaTypes,Library of Congress,SAR-I02,failed,1,18,http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember,1 of 18 referenced external terms did not resolve
+loc-mediaTypes,Library of Congress,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+loc-mediaTypes,Library of Congress,SAR-L02,cantTell,,,,reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-mediaTypes-reasoned.owl
+loc-mediaTypes,Library of Congress,SAR-L03,cantTell,,,,reasoner exited 1
+loc-graphicMaterials,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-graphicMaterials,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-graphicMaterials,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-graphicMaterials,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-graphicMaterials,Library of Congress,SAR-P03,passed,,,,
+loc-graphicMaterials,Library of Congress,SAR-P01,passed,,23716,,parsed 23716 triples as xml
+loc-graphicMaterials,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-graphicMaterials,Library of Congress,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-graphicMaterials,Library of Congress,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+loc-graphicMaterials,Library of Congress,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+loc-graphicMaterials,Library of Congress,SAR-D03,failed,,,,no owl:Ontology or skos:ConceptScheme resource declared
+loc-graphicMaterials,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+loc-graphicMaterials,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-graphicMaterials,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-graphicMaterials,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-graphicMaterials,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-graphicMaterials,Library of Congress,SAR-I01,passed,10,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,10 distinct external vocabulary terms referenced
+loc-graphicMaterials,Library of Congress,SAR-I02,failed,1,10,http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember,1 of 10 referenced external terms did not resolve
+loc-graphicMaterials,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-graphicMaterials,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-graphicMaterials,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-ethnographicTerms,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-ethnographicTerms,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-ethnographicTerms,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-ethnographicTerms,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-ethnographicTerms,Library of Congress,SAR-P03,passed,,,,
+loc-ethnographicTerms,Library of Congress,SAR-P01,passed,,228,,parsed 228 triples as xml
+loc-ethnographicTerms,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-ethnographicTerms,Library of Congress,SAR-L04,passed,0,26,,S9: skos:ConceptScheme is disjoint with skos:Concept
+loc-ethnographicTerms,Library of Congress,SAR-L05,passed,0,25,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+loc-ethnographicTerms,Library of Congress,SAR-L06,passed,0,25,,S14: no more than one prefLabel per language tag
+loc-ethnographicTerms,Library of Congress,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+loc-ethnographicTerms,Library of Congress,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+loc-ethnographicTerms,Library of Congress,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+loc-ethnographicTerms,Library of Congress,SAR-D01,passed,0,25,,
+loc-ethnographicTerms,Library of Congress,SAR-D02,failed,25,25,http://id.loc.gov/vocabulary/ethnographicTerms/afset020334,
+loc-ethnographicTerms,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-ethnographicTerms,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-ethnographicTerms,Library of Congress,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+loc-ethnographicTerms,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-ethnographicTerms,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-ethnographicTerms,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-ethnographicTerms,Library of Congress,SAR-I01,passed,19,,http://id.loc.gov/ontologies/RecordInfo#RecordInfo,19 distinct external vocabulary terms referenced
+loc-ethnographicTerms,Library of Congress,SAR-I02,passed,0,19,,0 of 19 referenced external terms did not resolve
+loc-ethnographicTerms,Library of Congress,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+loc-ethnographicTerms,Library of Congress,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+loc-ethnographicTerms,Library of Congress,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+loc-madsrdf,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-madsrdf,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-madsrdf,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-madsrdf,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-madsrdf,Library of Congress,SAR-P03,passed,,,,
+loc-madsrdf,Library of Congress,SAR-P01,failed,,,,parse error as xml: None:340:3: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#resource
+loc-madsrdf,Library of Congress,SAR-P02,cantTell,,,,serialisation undetermined because parsing failed
+loc-madsrdf,Library of Congress,SAR-L01,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L02,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L03,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L04,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L05,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L06,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L07,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L08,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-L09,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-D01,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-D02,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-D03,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-G01,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-G02,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-G03,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-S01,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-S02,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-I01,cantTell,,,,payload did not parse
+loc-madsrdf,Library of Congress,SAR-I02,cantTell,,,,payload did not parse
+loc-premis3,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-premis3,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-premis3,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-premis3,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-premis3,Library of Congress,SAR-P03,passed,,,,
+loc-premis3,Library of Congress,SAR-P01,passed,,471,,parsed 471 triples as xml
+loc-premis3,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-premis3,Library of Congress,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-premis3,Library of Congress,SAR-D01,passed,0,68,,
+loc-premis3,Library of Congress,SAR-D02,failed,40,68,http://www.loc.gov/premis/rdf/v3/determinationDate,
+loc-premis3,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-premis3,Library of Congress,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+loc-premis3,Library of Congress,SAR-G02,passed,,,,version or dated metadata present
+loc-premis3,Library of Congress,SAR-G03,failed,,,,no publisher or creator named in the payload
+loc-premis3,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-premis3,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-premis3,Library of Congress,SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+loc-premis3,Library of Congress,SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+loc-premis3,Library of Congress,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+loc-premis3,Library of Congress,SAR-L02,passed,,,,ELK found the ontology consistent
+loc-premis3,Library of Congress,SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+loc-bibframe,Library of Congress,SAR-R01,passed,,,,HTTP 200
+loc-bibframe,Library of Congress,SAR-R02,passed,,,,HTTP 200
+loc-bibframe,Library of Congress,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+loc-bibframe,Library of Congress,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+loc-bibframe,Library of Congress,SAR-P03,passed,,,,
+loc-bibframe,Library of Congress,SAR-P01,passed,,2735,,parsed 2735 triples as xml
+loc-bibframe,Library of Congress,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+loc-bibframe,Library of Congress,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+loc-bibframe,Library of Congress,SAR-D01,passed,0,450,,
+loc-bibframe,Library of Congress,SAR-D02,passed,0,450,,
+loc-bibframe,Library of Congress,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+loc-bibframe,Library of Congress,SAR-G01,passed,,,,licence or rights statement present
+loc-bibframe,Library of Congress,SAR-G02,passed,,,,version or dated metadata present
+loc-bibframe,Library of Congress,SAR-G03,passed,,,,publisher or creator present
+loc-bibframe,Library of Congress,SAR-S01,inapplicable,,,,no deprecated terms declared
+loc-bibframe,Library of Congress,SAR-S02,inapplicable,,,,no deprecated terms declared
+loc-bibframe,Library of Congress,SAR-I01,passed,1,,http://creativecommons.org/ns#license,1 distinct external vocabulary terms referenced
+loc-bibframe,Library of Congress,SAR-I02,passed,0,1,,0 of 1 referenced external terms did not resolve
+loc-bibframe,Library of Congress,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+loc-bibframe,Library of Congress,SAR-L02,passed,,,,ELK found the ontology consistent
+loc-bibframe,Library of Congress,SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+nlm-mesh-vocab,National Library of Medicine,SAR-R01,passed,,,,HTTP 200
+nlm-mesh-vocab,National Library of Medicine,SAR-R02,passed,,,,HTTP 200
+nlm-mesh-vocab,National Library of Medicine,SAR-R03,passed,,,,served application/rdf+xml under an RDF Accept header
+nlm-mesh-vocab,National Library of Medicine,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nlm-mesh-vocab,National Library of Medicine,SAR-P03,passed,,,,
+nlm-mesh-vocab,National Library of Medicine,SAR-P01,passed,,342,,parsed 342 triples as xml
+nlm-mesh-vocab,National Library of Medicine,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+nlm-mesh-vocab,National Library of Medicine,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+nlm-mesh-vocab,National Library of Medicine,SAR-D01,failed,1,65,http://id.nlm.nih.gov/mesh/vocab#broader,
+nlm-mesh-vocab,National Library of Medicine,SAR-D02,failed,1,65,http://id.nlm.nih.gov/mesh/vocab#broader,
+nlm-mesh-vocab,National Library of Medicine,SAR-D03,failed,1,1,http://id.nlm.nih.gov/mesh/vocab#,"0/1 titled, 0/1 described"
+nlm-mesh-vocab,National Library of Medicine,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+nlm-mesh-vocab,National Library of Medicine,SAR-G02,passed,,,,version or dated metadata present
+nlm-mesh-vocab,National Library of Medicine,SAR-G03,failed,,,,no publisher or creator named in the payload
+nlm-mesh-vocab,National Library of Medicine,SAR-S01,inapplicable,,,,no deprecated terms declared
+nlm-mesh-vocab,National Library of Medicine,SAR-S02,inapplicable,,,,no deprecated terms declared
+nlm-mesh-vocab,National Library of Medicine,SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+nlm-mesh-vocab,National Library of Medicine,SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+nlm-mesh-vocab,National Library of Medicine,SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+nlm-mesh-vocab,National Library of Medicine,SAR-L02,passed,,,,ELK found the ontology consistent
+nlm-mesh-vocab,National Library of Medicine,SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+nasa-gcmd-science,NASA,SAR-R01,passed,,,,HTTP 200
+nasa-gcmd-science,NASA,SAR-R02,passed,,,,HTTP 200
+nasa-gcmd-science,NASA,SAR-R03,failed,,,,served application/xml under an RDF Accept header
+nasa-gcmd-science,NASA,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nasa-gcmd-science,NASA,SAR-P03,passed,,,,
+nasa-gcmd-science,NASA,SAR-P01,passed,,24268,,parsed 24268 triples as xml
+nasa-gcmd-science,NASA,SAR-P02,failed,,,,"declared application/xml, which is not an RDF media type; parsed as xml"
+nasa-gcmd-science,NASA,SAR-L04,passed,0,2000,,S9: skos:ConceptScheme is disjoint with skos:Concept
+nasa-gcmd-science,NASA,SAR-L05,passed,0,2000,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+nasa-gcmd-science,NASA,SAR-L06,passed,0,2000,,S14: no more than one prefLabel per language tag
+nasa-gcmd-science,NASA,SAR-L07,passed,0,567,,S27: skos:related is disjoint with skos:broaderTransitive
+nasa-gcmd-science,NASA,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+nasa-gcmd-science,NASA,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+nasa-gcmd-science,NASA,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-science,NASA,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-science,NASA,SAR-D03,failed,,,,no owl:Ontology or skos:ConceptScheme resource declared
+nasa-gcmd-science,NASA,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+nasa-gcmd-science,NASA,SAR-G02,passed,,,,version or dated metadata present
+nasa-gcmd-science,NASA,SAR-G03,failed,,,,no publisher or creator named in the payload
+nasa-gcmd-science,NASA,SAR-S01,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-science,NASA,SAR-S02,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-science,NASA,SAR-I01,passed,10,,https://gcmd.earthdata.nasa.gov/kms#altLabel,10 distinct external vocabulary terms referenced
+nasa-gcmd-science,NASA,SAR-I02,passed,0,10,,0 of 10 referenced external terms did not resolve
+nasa-gcmd-science,NASA,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-science,NASA,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-science,NASA,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-platforms,NASA,SAR-R01,passed,,,,HTTP 200
+nasa-gcmd-platforms,NASA,SAR-R02,passed,,,,HTTP 200
+nasa-gcmd-platforms,NASA,SAR-R03,failed,,,,served application/xml under an RDF Accept header
+nasa-gcmd-platforms,NASA,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nasa-gcmd-platforms,NASA,SAR-P03,passed,,,,
+nasa-gcmd-platforms,NASA,SAR-P01,passed,,24247,,parsed 24247 triples as xml
+nasa-gcmd-platforms,NASA,SAR-P02,failed,,,,"declared application/xml, which is not an RDF media type; parsed as xml"
+nasa-gcmd-platforms,NASA,SAR-L04,passed,0,1309,,S9: skos:ConceptScheme is disjoint with skos:Concept
+nasa-gcmd-platforms,NASA,SAR-L05,passed,0,1309,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+nasa-gcmd-platforms,NASA,SAR-L06,passed,0,1309,,S14: no more than one prefLabel per language tag
+nasa-gcmd-platforms,NASA,SAR-L07,failed,6,32,043dc242-1014-4e9a-91ee-c472b791b026,S27: skos:related is disjoint with skos:broaderTransitive
+nasa-gcmd-platforms,NASA,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+nasa-gcmd-platforms,NASA,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+nasa-gcmd-platforms,NASA,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-platforms,NASA,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-platforms,NASA,SAR-D03,failed,,,,no owl:Ontology or skos:ConceptScheme resource declared
+nasa-gcmd-platforms,NASA,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+nasa-gcmd-platforms,NASA,SAR-G02,passed,,,,version or dated metadata present
+nasa-gcmd-platforms,NASA,SAR-G03,failed,,,,no publisher or creator named in the payload
+nasa-gcmd-platforms,NASA,SAR-S01,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-platforms,NASA,SAR-S02,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-platforms,NASA,SAR-I01,passed,15,,https://gcmd.earthdata.nasa.gov/kms#altLabel,15 distinct external vocabulary terms referenced
+nasa-gcmd-platforms,NASA,SAR-I02,passed,0,15,,0 of 15 referenced external terms did not resolve
+nasa-gcmd-platforms,NASA,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-platforms,NASA,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-platforms,NASA,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-instruments,NASA,SAR-R01,passed,,,,HTTP 200
+nasa-gcmd-instruments,NASA,SAR-R02,passed,,,,HTTP 200
+nasa-gcmd-instruments,NASA,SAR-R03,failed,,,,served application/xml under an RDF Accept header
+nasa-gcmd-instruments,NASA,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nasa-gcmd-instruments,NASA,SAR-P03,passed,,,,
+nasa-gcmd-instruments,NASA,SAR-P01,passed,,26701,,parsed 26701 triples as xml
+nasa-gcmd-instruments,NASA,SAR-P02,failed,,,,"declared application/xml, which is not an RDF media type; parsed as xml"
+nasa-gcmd-instruments,NASA,SAR-L04,passed,0,2000,,S9: skos:ConceptScheme is disjoint with skos:Concept
+nasa-gcmd-instruments,NASA,SAR-L05,passed,0,2000,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+nasa-gcmd-instruments,NASA,SAR-L06,passed,0,2000,,S14: no more than one prefLabel per language tag
+nasa-gcmd-instruments,NASA,SAR-L07,passed,0,118,,S27: skos:related is disjoint with skos:broaderTransitive
+nasa-gcmd-instruments,NASA,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+nasa-gcmd-instruments,NASA,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+nasa-gcmd-instruments,NASA,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-instruments,NASA,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-instruments,NASA,SAR-D03,failed,,,,no owl:Ontology or skos:ConceptScheme resource declared
+nasa-gcmd-instruments,NASA,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+nasa-gcmd-instruments,NASA,SAR-G02,passed,,,,version or dated metadata present
+nasa-gcmd-instruments,NASA,SAR-G03,failed,,,,no publisher or creator named in the payload
+nasa-gcmd-instruments,NASA,SAR-S01,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-instruments,NASA,SAR-S02,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-instruments,NASA,SAR-I01,passed,16,,https://gcmd.earthdata.nasa.gov/kms#altLabel,16 distinct external vocabulary terms referenced
+nasa-gcmd-instruments,NASA,SAR-I02,passed,0,16,,0 of 16 referenced external terms did not resolve
+nasa-gcmd-instruments,NASA,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-instruments,NASA,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-instruments,NASA,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-providers,NASA,SAR-R01,passed,,,,HTTP 200
+nasa-gcmd-providers,NASA,SAR-R02,passed,,,,HTTP 200
+nasa-gcmd-providers,NASA,SAR-R03,failed,,,,served application/xml under an RDF Accept header
+nasa-gcmd-providers,NASA,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nasa-gcmd-providers,NASA,SAR-P03,passed,,,,
+nasa-gcmd-providers,NASA,SAR-P01,passed,,26155,,parsed 26155 triples as xml
+nasa-gcmd-providers,NASA,SAR-P02,failed,,,,"declared application/xml, which is not an RDF media type; parsed as xml"
+nasa-gcmd-providers,NASA,SAR-L04,passed,0,2000,,S9: skos:ConceptScheme is disjoint with skos:Concept
+nasa-gcmd-providers,NASA,SAR-L05,passed,0,2000,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+nasa-gcmd-providers,NASA,SAR-L06,passed,0,2000,,S14: no more than one prefLabel per language tag
+nasa-gcmd-providers,NASA,SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+nasa-gcmd-providers,NASA,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+nasa-gcmd-providers,NASA,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+nasa-gcmd-providers,NASA,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-providers,NASA,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+nasa-gcmd-providers,NASA,SAR-D03,failed,,,,no owl:Ontology or skos:ConceptScheme resource declared
+nasa-gcmd-providers,NASA,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+nasa-gcmd-providers,NASA,SAR-G02,passed,,,,version or dated metadata present
+nasa-gcmd-providers,NASA,SAR-G03,failed,,,,no publisher or creator named in the payload
+nasa-gcmd-providers,NASA,SAR-S01,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-providers,NASA,SAR-S02,inapplicable,,,,no deprecated terms declared
+nasa-gcmd-providers,NASA,SAR-I01,passed,14,,https://gcmd.earthdata.nasa.gov/kms#altLabel,14 distinct external vocabulary terms referenced
+nasa-gcmd-providers,NASA,SAR-I02,passed,0,14,,0 of 14 referenced external terms did not resolve
+nasa-gcmd-providers,NASA,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-providers,NASA,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+nasa-gcmd-providers,NASA,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+usgs-thesaurus,USGS,SAR-R01,passed,,,,HTTP 200
+usgs-thesaurus,USGS,SAR-R02,passed,,,,HTTP 200
+usgs-thesaurus,USGS,SAR-R03,failed,,,,served text/html under an RDF Accept header
+usgs-thesaurus,USGS,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+usgs-thesaurus,USGS,SAR-P03,passed,,,,
+usgs-thesaurus,USGS,SAR-P01,passed,,9689,,parsed 9689 triples as xml
+usgs-thesaurus,USGS,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+usgs-thesaurus,USGS,SAR-L04,passed,0,1027,,S9: skos:ConceptScheme is disjoint with skos:Concept
+usgs-thesaurus,USGS,SAR-L05,passed,0,1026,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+usgs-thesaurus,USGS,SAR-L06,passed,0,1026,,S14: no more than one prefLabel per language tag
+usgs-thesaurus,USGS,SAR-L07,failed,1,1106,https://apps.usgs.gov/thesaurus/USGSThesaurus/controlled%20fires,S27: skos:related is disjoint with skos:broaderTransitive
+usgs-thesaurus,USGS,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+usgs-thesaurus,USGS,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+usgs-thesaurus,USGS,SAR-D01,passed,0,1026,,
+usgs-thesaurus,USGS,SAR-D02,passed,0,1026,,
+usgs-thesaurus,USGS,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+usgs-thesaurus,USGS,SAR-G01,passed,,,,licence or rights statement present
+usgs-thesaurus,USGS,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+usgs-thesaurus,USGS,SAR-G03,passed,,,,publisher or creator present
+usgs-thesaurus,USGS,SAR-S01,inapplicable,,,,no deprecated terms declared
+usgs-thesaurus,USGS,SAR-S02,inapplicable,,,,no deprecated terms declared
+usgs-thesaurus,USGS,SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+usgs-thesaurus,USGS,SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+usgs-thesaurus,USGS,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+usgs-thesaurus,USGS,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+usgs-thesaurus,USGS,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+usgs-geographic,USGS,SAR-R01,passed,,,,HTTP 200
+usgs-geographic,USGS,SAR-R02,passed,,,,HTTP 200
+usgs-geographic,USGS,SAR-R03,failed,,,,served text/html under an RDF Accept header
+usgs-geographic,USGS,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+usgs-geographic,USGS,SAR-P03,passed,,,,
+usgs-geographic,USGS,SAR-P01,passed,,840572,,parsed 840572 triples as xml
+usgs-geographic,USGS,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+usgs-geographic,USGS,SAR-L04,passed,0,51522,,S9: skos:ConceptScheme is disjoint with skos:Concept
+usgs-geographic,USGS,SAR-L05,passed,0,51521,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+usgs-geographic,USGS,SAR-L06,passed,0,51521,,S14: no more than one prefLabel per language tag
+usgs-geographic,USGS,SAR-L07,failed,4700,246221,https://apps.usgs.gov/thesaurus/CommonGeographicAreas/King,S27: skos:related is disjoint with skos:broaderTransitive
+usgs-geographic,USGS,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+usgs-geographic,USGS,SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+usgs-geographic,USGS,SAR-D01,passed,0,51521,,
+usgs-geographic,USGS,SAR-D02,passed,0,51521,,
+usgs-geographic,USGS,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+usgs-geographic,USGS,SAR-G01,passed,,,,licence or rights statement present
+usgs-geographic,USGS,SAR-G02,failed,,,,"no owl:versionIRI, owl:versionInfo or dated metadata"
+usgs-geographic,USGS,SAR-G03,passed,,,,publisher or creator present
+usgs-geographic,USGS,SAR-S01,inapplicable,,,,no deprecated terms declared
+usgs-geographic,USGS,SAR-S02,inapplicable,,,,no deprecated terms declared
+usgs-geographic,USGS,SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+usgs-geographic,USGS,SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+usgs-geographic,USGS,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+usgs-geographic,USGS,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+usgs-geographic,USGS,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+usda-nalt,USDA National Agricultural Library,SAR-R01,passed,,,,HTTP 200
+usda-nalt,USDA National Agricultural Library,SAR-R02,passed,,,,HTTP 200
+usda-nalt,USDA National Agricultural Library,SAR-R03,failed,,,,served text/html under an RDF Accept header
+usda-nalt,USDA National Agricultural Library,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+usda-nalt,USDA National Agricultural Library,SAR-P03,passed,,,,
+usda-nalt,USDA National Agricultural Library,SAR-P01,passed,,1153267,,parsed 1153267 triples as turtle
+usda-nalt,USDA National Agricultural Library,SAR-P02,inapplicable,,,,delivered as archive (application/zip)
+usda-nalt,USDA National Agricultural Library,SAR-L04,passed,0,76692,,S9: skos:ConceptScheme is disjoint with skos:Concept
+usda-nalt,USDA National Agricultural Library,SAR-L05,passed,0,76691,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+usda-nalt,USDA National Agricultural Library,SAR-L06,failed,32,76691,https://lod.nal.usda.gov/nalt/190060,S14: no more than one prefLabel per language tag
+usda-nalt,USDA National Agricultural Library,SAR-L07,passed,0,21740,,S27: skos:related is disjoint with skos:broaderTransitive
+usda-nalt,USDA National Agricultural Library,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+usda-nalt,USDA National Agricultural Library,SAR-L09,passed,0,44355,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+usda-nalt,USDA National Agricultural Library,SAR-D01,passed,0,76691,,
+usda-nalt,USDA National Agricultural Library,SAR-D02,failed,69089,76691,https://lod.nal.usda.gov/nalt/233394,
+usda-nalt,USDA National Agricultural Library,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+usda-nalt,USDA National Agricultural Library,SAR-G01,passed,,,,licence or rights statement present
+usda-nalt,USDA National Agricultural Library,SAR-G02,passed,,,,version or dated metadata present
+usda-nalt,USDA National Agricultural Library,SAR-G03,passed,,,,publisher or creator present
+usda-nalt,USDA National Agricultural Library,SAR-S01,inapplicable,,,,no deprecated terms declared
+usda-nalt,USDA National Agricultural Library,SAR-S02,inapplicable,,,,no deprecated terms declared
+usda-nalt,USDA National Agricultural Library,SAR-I01,passed,11,,https://lod.nal.usda.gov/naltv#Chemical,11 distinct external vocabulary terms referenced
+usda-nalt,USDA National Agricultural Library,SAR-I02,passed,0,11,,0 of 11 referenced external terms did not resolve
+usda-nalt,USDA National Agricultural Library,SAR-L01,failed,5,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+usda-nalt,USDA National Agricultural Library,SAR-L02,passed,,,,ELK found the ontology consistent
+usda-nalt,USDA National Agricultural Library,SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+noaa-paleo,NOAA NCEI,SAR-R01,passed,,,,HTTP 200
+noaa-paleo,NOAA NCEI,SAR-R02,failed,,,,HTTP 404
+noaa-paleo,NOAA NCEI,SAR-R03,failed,,,,namespace returned HTTP 404
+noaa-paleo,NOAA NCEI,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+noaa-paleo,NOAA NCEI,SAR-P03,failed,,,,not valid UTF-8 and carries no XML encoding declaration; first bad byte 0xf1 at offset 9497 in 'n index of the El Niño Southern Oscillat'
+noaa-paleo,NOAA NCEI,SAR-P01,passed,,27326,,parsed 27326 triples as xml
+noaa-paleo,NOAA NCEI,SAR-P02,passed,,,,"declared application/rdf+xml (xml), parsed as xml"
+noaa-paleo,NOAA NCEI,SAR-L04,passed,0,2538,,S9: skos:ConceptScheme is disjoint with skos:Concept
+noaa-paleo,NOAA NCEI,SAR-L05,passed,0,2537,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+noaa-paleo,NOAA NCEI,SAR-L06,passed,0,2537,,S14: no more than one prefLabel per language tag
+noaa-paleo,NOAA NCEI,SAR-L07,passed,0,2873,,S27: skos:related is disjoint with skos:broaderTransitive
+noaa-paleo,NOAA NCEI,SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+noaa-paleo,NOAA NCEI,SAR-L09,passed,0,788,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+noaa-paleo,NOAA NCEI,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+noaa-paleo,NOAA NCEI,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+noaa-paleo,NOAA NCEI,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+noaa-paleo,NOAA NCEI,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+noaa-paleo,NOAA NCEI,SAR-G02,passed,,,,version or dated metadata present
+noaa-paleo,NOAA NCEI,SAR-G03,passed,,,,publisher or creator present
+noaa-paleo,NOAA NCEI,SAR-S01,inapplicable,,,,no deprecated terms declared
+noaa-paleo,NOAA NCEI,SAR-S02,inapplicable,,,,no deprecated terms declared
+noaa-paleo,NOAA NCEI,SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+noaa-paleo,NOAA NCEI,SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+noaa-paleo,NOAA NCEI,SAR-L01,inapplicable,,,,asset is not an OWL ontology
+noaa-paleo,NOAA NCEI,SAR-L02,inapplicable,,,,asset is not an OWL ontology
+noaa-paleo,NOAA NCEI,SAR-L03,inapplicable,,,,asset is not an OWL ontology
+dcat-us-shacl,GSA / CDO Council,SAR-R01,passed,,,,HTTP 200
+dcat-us-shacl,GSA / CDO Council,SAR-R02,failed,,,,HTTP 404
+dcat-us-shacl,GSA / CDO Council,SAR-R03,failed,,,,namespace returned HTTP 404
+dcat-us-shacl,GSA / CDO Council,SAR-R04,inapplicable,,,,not published on a .gov or .mil domain
+dcat-us-shacl,GSA / CDO Council,SAR-P03,passed,,,,
+dcat-us-shacl,GSA / CDO Council,SAR-P01,passed,,4042,,parsed 4042 triples as turtle
+dcat-us-shacl,GSA / CDO Council,SAR-P02,inapplicable,,,,"Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+dcat-us-shacl,GSA / CDO Council,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+dcat-us-shacl,GSA / CDO Council,SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+dcat-us-shacl,GSA / CDO Council,SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+dcat-us-shacl,GSA / CDO Council,SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+dcat-us-shacl,GSA / CDO Council,SAR-G01,passed,,,,licence or rights statement present
+dcat-us-shacl,GSA / CDO Council,SAR-G02,passed,,,,version or dated metadata present
+dcat-us-shacl,GSA / CDO Council,SAR-G03,passed,,,,publisher or creator present
+dcat-us-shacl,GSA / CDO Council,SAR-S01,inapplicable,,,,no deprecated terms declared
+dcat-us-shacl,GSA / CDO Council,SAR-S02,inapplicable,,,,no deprecated terms declared
+dcat-us-shacl,GSA / CDO Council,SAR-I01,passed,18,,http://data.resources.gov/shapes/dcat-us#requirementLevel,18 distinct external vocabulary terms referenced
+dcat-us-shacl,GSA / CDO Council,SAR-I02,failed,1,18,http://data.resources.gov/shapes/dcat-us#requirementLevel,1 of 18 referenced external terms did not resolve
+dcat-us-shacl,GSA / CDO Council,SAR-L01,failed,266,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+dcat-us-shacl,GSA / CDO Council,SAR-L02,cantTell,,,,reasoner exited 1: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.w3.org/ns/shacl#> Cause: Server returned HTTP response code: 429 for URL: https://www.w3.org/ns/shacl
+dcat-us-shacl,GSA / CDO Council,SAR-L03,cantTell,,,,reasoner exited 1
+nara-restrictions,National Archives (via DCAT-US),SAR-R01,passed,,,,HTTP 200
+nara-restrictions,National Archives (via DCAT-US),SAR-R02,failed,,,,HTTP 404
+nara-restrictions,National Archives (via DCAT-US),SAR-R03,failed,,,,namespace returned HTTP 404
+nara-restrictions,National Archives (via DCAT-US),SAR-R04,inapplicable,,,,not published on a .gov or .mil domain
+nara-restrictions,National Archives (via DCAT-US),SAR-P03,passed,,,,
+nara-restrictions,National Archives (via DCAT-US),SAR-P01,passed,,331,,parsed 331 triples as turtle
+nara-restrictions,National Archives (via DCAT-US),SAR-P02,inapplicable,,,,"Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+nara-restrictions,National Archives (via DCAT-US),SAR-L04,passed,0,67,,S9: skos:ConceptScheme is disjoint with skos:Concept
+nara-restrictions,National Archives (via DCAT-US),SAR-L05,passed,0,62,,"S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+nara-restrictions,National Archives (via DCAT-US),SAR-L06,passed,0,67,,S14: no more than one prefLabel per language tag
+nara-restrictions,National Archives (via DCAT-US),SAR-L07,passed,0,0,,S27: skos:related is disjoint with skos:broaderTransitive
+nara-restrictions,National Archives (via DCAT-US),SAR-L08,passed,0,0,,S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme
+nara-restrictions,National Archives (via DCAT-US),SAR-L09,passed,0,0,,S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch
+nara-restrictions,National Archives (via DCAT-US),SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+nara-restrictions,National Archives (via DCAT-US),SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+nara-restrictions,National Archives (via DCAT-US),SAR-D03,passed,5,6,https://resources.data.gov/vocab/nara/AccessRestrictionStatusAuthorityList,"6/6 titled, 1/6 described"
+nara-restrictions,National Archives (via DCAT-US),SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+nara-restrictions,National Archives (via DCAT-US),SAR-G02,passed,,,,version or dated metadata present
+nara-restrictions,National Archives (via DCAT-US),SAR-G03,passed,,,,publisher or creator present
+nara-restrictions,National Archives (via DCAT-US),SAR-S01,inapplicable,,,,no deprecated terms declared
+nara-restrictions,National Archives (via DCAT-US),SAR-S02,inapplicable,,,,no deprecated terms declared
+nara-restrictions,National Archives (via DCAT-US),SAR-I01,failed,0,,,0 distinct external vocabulary terms referenced
+nara-restrictions,National Archives (via DCAT-US),SAR-I02,inapplicable,,,,no external vocabulary terms to resolve
+nara-restrictions,National Archives (via DCAT-US),SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+nara-restrictions,National Archives (via DCAT-US),SAR-L02,passed,,,,ELK found the ontology consistent
+nara-restrictions,National Archives (via DCAT-US),SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+sweet,"NASA JPL origin, ESIP maintained",SAR-R01,passed,,,,HTTP 200
+sweet,"NASA JPL origin, ESIP maintained",SAR-R02,passed,,,,HTTP 200
+sweet,"NASA JPL origin, ESIP maintained",SAR-R03,failed,,,,served text/html under an RDF Accept header
+sweet,"NASA JPL origin, ESIP maintained",SAR-R04,inapplicable,,,,not published on a .gov or .mil domain
+sweet,"NASA JPL origin, ESIP maintained",SAR-P03,passed,,,,
+sweet,"NASA JPL origin, ESIP maintained",SAR-P01,passed,,244,,parsed 244 triples as turtle
+sweet,"NASA JPL origin, ESIP maintained",SAR-P02,passed,,,,"declared text/turtle (turtle), parsed as turtle"
+sweet,"NASA JPL origin, ESIP maintained",SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+sweet,"NASA JPL origin, ESIP maintained",SAR-D01,cantTell,,,,no terms found in the asset's declared namespace
+sweet,"NASA JPL origin, ESIP maintained",SAR-D02,cantTell,,,,no terms found in the asset's declared namespace
+sweet,"NASA JPL origin, ESIP maintained",SAR-D03,passed,0,1,,"1/1 titled, 1/1 described"
+sweet,"NASA JPL origin, ESIP maintained",SAR-G01,passed,,,,licence or rights statement present
+sweet,"NASA JPL origin, ESIP maintained",SAR-G02,passed,,,,version or dated metadata present
+sweet,"NASA JPL origin, ESIP maintained",SAR-G03,failed,,,,no publisher or creator named in the payload
+sweet,"NASA JPL origin, ESIP maintained",SAR-S01,inapplicable,,,,no deprecated terms declared
+sweet,"NASA JPL origin, ESIP maintained",SAR-S02,inapplicable,,,,no deprecated terms declared
+sweet,"NASA JPL origin, ESIP maintained",SAR-I01,passed,16,,http://mmisw.org/ont/mmi/20081020/ontologyMetadata/contact,16 distinct external vocabulary terms referenced
+sweet,"NASA JPL origin, ESIP maintained",SAR-I02,passed,0,16,,0 of 16 referenced external terms did not resolve
+sweet,"NASA JPL origin, ESIP maintained",SAR-L01,failed,2,,,outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+sweet,"NASA JPL origin, ESIP maintained",SAR-L02,passed,,,,ELK found the ontology consistent
+sweet,"NASA JPL origin, ESIP maintained",SAR-L03,passed,,,,ELK reported no unsatisfiable classes
+nci-thesaurus,National Cancer Institute,SAR-R01,passed,,,,HTTP 200
+nci-thesaurus,National Cancer Institute,SAR-R02,passed,,,,HTTP 200
+nci-thesaurus,National Cancer Institute,SAR-R03,failed,,,,served text/html under an RDF Accept header
+nci-thesaurus,National Cancer Institute,SAR-R04,passed,,,,plain HTTP redirects to HTTPS
+nci-thesaurus,National Cancer Institute,SAR-P03,passed,,,,
+nci-thesaurus,National Cancer Institute,SAR-P01,passed,,10855010,,parsed 10855010 triples as xml
+nci-thesaurus,National Cancer Institute,SAR-P02,inapplicable,,,,delivered as archive (application/zip)
+nci-thesaurus,National Cancer Institute,SAR-L04,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-L05,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-L06,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-L07,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-L08,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-L09,inapplicable,,,,asset declares no SKOS concepts or schemes
+nci-thesaurus,National Cancer Institute,SAR-D01,failed,2,212719,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#default,
+nci-thesaurus,National Cancer Institute,SAR-D02,failed,212716,212719,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156644,
+nci-thesaurus,National Cancer Institute,SAR-D03,failed,1,1,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl,"0/1 titled, 1/1 described"
+nci-thesaurus,National Cancer Institute,SAR-G01,failed,,,,"no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+nci-thesaurus,National Cancer Institute,SAR-G02,passed,,,,version or dated metadata present
+nci-thesaurus,National Cancer Institute,SAR-G03,failed,,,,no publisher or creator named in the payload
+nci-thesaurus,National Cancer Institute,SAR-S01,failed,5614,5614,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43698,
+nci-thesaurus,National Cancer Institute,SAR-S02,failed,16661,5614,N9d01ea6d1b284fb0a05c9c1fcd71f2d8,
+nci-thesaurus,National Cancer Institute,SAR-I01,passed,3,,http://protege.stanford.edu/plugins/owl/protege#defaultLanguage,3 distinct external vocabulary terms referenced
+nci-thesaurus,National Cancer Institute,SAR-I02,passed,0,3,,0 of 3 referenced external terms did not resolve
+nci-thesaurus,National Cancer Institute,SAR-L01,passed,,,,within OWL 2 DL
+nci-thesaurus,National Cancer Institute,SAR-L02,passed,,,,ELK found the ontology consistent
+nci-thesaurus,National Cancer Institute,SAR-L03,passed,,,,ELK reported no unsatisfiable classes

@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+
+      # Everything below runs offline. The probe stage is deliberately not run
+      # in CI: it hits live government infrastructure, and a CI job should never
+      # be a source of load on someone else's servers.
+      - name: Unit tests for the check battery
+        run: python -m pytest tests/ -q
+
+      - name: Ontology and check catalogue parse
+        run: |
+          python - <<'PY'
+          from rdflib import Graph, RDF, Namespace
+          SAR = Namespace("https://gov.tesseract.academy/def/sar#")
+          EARL = Namespace("http://www.w3.org/ns/earl#")
+          g = Graph()
+          g.parse("ontology/sar.ttl", format="turtle")
+          g.parse("ontology/checks.ttl", format="turtle")
+          print(f"parsed {len(g)} triples")
+
+          # Every check must carry its five mandatory facets. A check that
+          # cannot name its authority is an opinion and must not merge.
+          missing = []
+          for c in g.subjects(RDF.type, EARL.TestCase):
+              for p, name in [(SAR.derivesFrom, "derivesFrom"), (SAR.citation, "citation"),
+                              (SAR.normativity, "normativity"), (SAR.severity, "severity"),
+                              (SAR.appliesToKind, "appliesToKind")]:
+                  if not list(g.objects(c, p)):
+                      missing.append(f"{c} missing {name}")
+          if missing:
+              raise SystemExit("Catalogue integrity failure:\n" + "\n".join(missing))
+          n = len(list(g.subjects(RDF.type, EARL.TestCase)))
+          print(f"{n} checks, all carrying their mandatory facets")
+          PY
+
+      - name: Published results are internally consistent
+        run: python3 pipeline/validate_results.py
+
+      - name: Headline figures agree by two independent paths
+        run: python3 pipeline/crosscheck.py
+
+      - name: No em dashes in outward-facing text
+        run: |
+          if grep -rn "—\|–" --include="*.md" --include="*.ttl" . ; then
+            echo "Em or en dash found. House style forbids both."
+            exit 1
+          fi
+          echo "clean"

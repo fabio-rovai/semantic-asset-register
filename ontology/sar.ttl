@@ -1,0 +1,329 @@
+@prefix sar:     <https://gov.tesseract.academy/def/sar#> .
+@prefix sarc:    <https://gov.tesseract.academy/def/sar/check#> .
+@prefix earl:    <http://www.w3.org/ns/earl#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+<https://gov.tesseract.academy/def/sar>
+    a owl:Ontology ;
+    dcterms:title "Semantic Asset Register (SAR) ontology"@en ;
+    dcterms:description """A model for describing published semantic assets (ontologies, concept
+schemes, code lists), the dated retrievals by which they are actually obtained, and reproducible
+quality assessments performed over those retrievals.
+
+SAR is designed around three commitments that distinguish it from existing ontology-metadata and
+ontology-evaluation vocabularies.
+
+First, assessments are made against a Snapshot, never against an abstract asset. A quality claim
+about "the NASA GCMD keywords" is not reproducible; a quality claim about a specific retrieval,
+with a recorded HTTP status, media type and content hash, is. Every finding in SAR is therefore
+anchored to a dated, hashed retrieval.
+
+Second, findings are expressed as W3C EARL assertions rather than as a bespoke result format. EARL
+already models the assertor, the test subject, the test criterion, the outcome and the mode of
+testing, and it already distinguishes passing and failing from cantTell, inapplicable and untested.
+That last distinction is essential to a fair audit: a SKOS concept scheme that carries no OWL
+axioms must be recorded as inapplicable for OWL profile conformance, not as a failure.
+
+Third, every check declares its normativity. A check is either normative, meaning that failing it
+violates a published specification, or conventional, meaning that failing it departs from a
+community practice that the asset's publisher may never have adopted. Existing quality reports
+collapse these two categories, which is the main reason their output is dismissed by the
+publishers they assess. SAR keeps them apart and requires every check to name the authority it
+derives from."""@en ;
+    dcterms:publisher <https://thetesseractacademy.com> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-08-16"^^xsd:date ;
+    owl:versionIRI <https://gov.tesseract.academy/def/sar/0.1.0> ;
+    owl:versionInfo "0.1.0" ;
+    vann:preferredNamespacePrefix "sar" ;
+    vann:preferredNamespaceUri "https://gov.tesseract.academy/def/sar#" .
+
+################################################################
+# Assets and retrievals
+################################################################
+
+sar:SemanticAsset a owl:Class ;
+    rdfs:label "Semantic asset"@en ;
+    rdfs:comment """A published, identifiable semantic artefact intended for reuse: an ontology, a
+concept scheme, a thesaurus, a taxonomy, or a controlled code list. The asset is the abstract,
+continuant thing that persists across versions. It is never itself the subject of a quality
+assertion; its Snapshots are."""@en .
+
+sar:AssetKind a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Asset kind"@en ;
+    rdfs:comment """The representational kind of an asset, used to decide which checks apply.
+Kind is modelled as a facet rather than a subclass hierarchy because a single published file
+routinely carries more than one kind, for example an OWL ontology that also defines SKOS concept
+schemes."""@en .
+
+sar:Snapshot a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Snapshot"@en ;
+    rdfs:comment """A single dated retrieval of a semantic asset from a specific URL, together with
+the observed transport facts and a content hash. The Snapshot is the unit of assessment. Two
+Snapshots of the same asset taken on different dates are different subjects and may carry
+different findings."""@en .
+
+sar:Assessment a owl:Class ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:label "Assessment"@en ;
+    rdfs:comment """The activity of running a battery of checks over one Snapshot, producing EARL
+assertions. Records which runner performed it and when, so that results can be regenerated and
+compared across runs."""@en .
+
+sar:Authority a owl:Class ;
+    rdfs:label "Authority"@en ;
+    rdfs:comment """The published source from which a check derives its warrant: a W3C
+recommendation, an ISO standard, a community guideline, a funder policy, or this register itself.
+Every check must name one, so that a publisher receiving a finding can read the rule it is said to
+have broken."""@en .
+
+sar:Normativity a owl:Class ;
+    rdfs:label "Normativity"@en ;
+    rdfs:comment """Whether failing a check violates a specification or merely departs from a
+convention. See sar:Normative and sar:Conventional."""@en .
+
+sar:Dimension a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Assessment dimension"@en ;
+    rdfs:comment "A grouping of checks that speak to one aspect of asset quality."@en .
+
+sar:Severity a owl:Class ;
+    rdfs:label "Severity"@en ;
+    rdfs:comment """How much a failure matters in practice. Severity is deliberately independent of
+sar:Normativity. A conventional check can carry high severity, because an unsatisfiable class
+breaks reasoning even though no specification forbids it; and a normative check can carry low
+severity, because a mislabelled media type violates a standard while inconveniencing almost
+nobody. Conflating the two is what produces quality reports that publishers ignore."""@en .
+
+sar:DimensionScore a owl:Class ;
+    rdfs:label "Dimension score"@en ;
+    rdfs:comment """The aggregate outcome for one dimension over one Snapshot. Scores are derived,
+never asserted by hand, and always carry the counts they were computed from so that a reader can
+recompute them or reject the weighting."""@en .
+
+################################################################
+# Properties: assets and retrievals
+################################################################
+
+sar:assetKind a owl:ObjectProperty ;
+    rdfs:label "asset kind"@en ;
+    rdfs:domain sar:SemanticAsset ;
+    rdfs:range sar:AssetKind .
+
+sar:publishedBy a owl:ObjectProperty ;
+    rdfs:label "published by"@en ;
+    rdfs:comment "The organisation accountable for publishing the asset, normally a government agency."@en ;
+    rdfs:domain sar:SemanticAsset ;
+    rdfs:range prov:Agent .
+
+sar:namespaceUri a owl:DatatypeProperty ;
+    rdfs:label "namespace URI"@en ;
+    rdfs:comment "The namespace the asset mints terms in, where it mints any."@en ;
+    rdfs:domain sar:SemanticAsset ;
+    rdfs:range xsd:anyURI .
+
+sar:snapshotOf a owl:ObjectProperty ;
+    rdfs:label "snapshot of"@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range sar:SemanticAsset .
+
+sar:retrievedFrom a owl:DatatypeProperty ;
+    rdfs:label "retrieved from"@en ;
+    rdfs:comment "The URL actually requested, before any redirect."@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:anyURI .
+
+sar:finalUrl a owl:DatatypeProperty ;
+    rdfs:label "final URL"@en ;
+    rdfs:comment "The URL the request resolved to after following redirects. Divergence from sar:retrievedFrom is itself evidence about the stability of a published identifier."@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:anyURI .
+
+sar:retrievedAt a owl:DatatypeProperty ;
+    rdfs:label "retrieved at"@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:dateTime .
+
+sar:httpStatus a owl:DatatypeProperty ;
+    rdfs:label "HTTP status"@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:integer .
+
+sar:mediaType a owl:DatatypeProperty ;
+    rdfs:label "media type"@en ;
+    rdfs:comment "The Content-Type actually returned, which is frequently not the media type the asset claims to be published in."@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:string .
+
+sar:byteSize a owl:DatatypeProperty ;
+    rdfs:label "byte size"@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:integer .
+
+sar:sha256 a owl:DatatypeProperty ;
+    rdfs:label "SHA-256"@en ;
+    rdfs:comment "Hash of the retrieved bytes, so that a later run can prove whether the published artefact changed."@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:string .
+
+sar:tripleCount a owl:DatatypeProperty ;
+    rdfs:label "triple count"@en ;
+    rdfs:domain sar:Snapshot ;
+    rdfs:range xsd:integer .
+
+################################################################
+# Properties: checks
+################################################################
+
+sar:derivesFrom a owl:ObjectProperty ;
+    rdfs:label "derives from"@en ;
+    rdfs:comment "The authority that warrants this check. Mandatory in practice: an unwarranted check is an opinion."@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range sar:Authority .
+
+sar:normativity a owl:ObjectProperty ;
+    rdfs:label "normativity"@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range sar:Normativity .
+
+sar:appliesToKind a owl:ObjectProperty ;
+    rdfs:label "applies to kind"@en ;
+    rdfs:comment """The asset kinds for which this check is meaningful. A check whose kind does not
+match the Snapshot must yield earl:inapplicable, never earl:failed."""@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range sar:AssetKind .
+
+sar:dimension a owl:ObjectProperty ;
+    rdfs:label "dimension"@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range sar:Dimension .
+
+sar:severity a owl:ObjectProperty ;
+    rdfs:label "severity"@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range sar:Severity .
+
+sar:citation a owl:DatatypeProperty ;
+    rdfs:label "citation"@en ;
+    rdfs:comment "The specific clause, section or rule identifier within the authority that this check tests."@en ;
+    rdfs:domain earl:TestCriterion ;
+    rdfs:range xsd:string .
+
+################################################################
+# Properties: findings
+################################################################
+
+sar:affectedCount a owl:DatatypeProperty ;
+    rdfs:label "affected count"@en ;
+    rdfs:comment "How many terms, axioms or concepts triggered the finding. A failure affecting 3 of 40,000 concepts is not the same result as one affecting all of them, and a register that reports only pass or fail hides the difference."@en ;
+    rdfs:domain earl:TestResult ;
+    rdfs:range xsd:integer .
+
+sar:populationCount a owl:DatatypeProperty ;
+    rdfs:label "population count"@en ;
+    rdfs:comment "The denominator against which sar:affectedCount should be read."@en ;
+    rdfs:domain earl:TestResult ;
+    rdfs:range xsd:integer .
+
+sar:exampleTerm a owl:DatatypeProperty ;
+    rdfs:label "example term"@en ;
+    rdfs:comment "A concrete IRI exhibiting the finding, so the publisher can reproduce it immediately."@en ;
+    rdfs:domain earl:TestResult ;
+    rdfs:range xsd:anyURI .
+
+sar:scoreFor a owl:ObjectProperty ;
+    rdfs:label "score for"@en ;
+    rdfs:domain sar:DimensionScore ;
+    rdfs:range sar:Snapshot .
+
+sar:scoreDimension a owl:ObjectProperty ;
+    rdfs:label "score dimension"@en ;
+    rdfs:domain sar:DimensionScore ;
+    rdfs:range sar:Dimension .
+
+sar:passedCount a owl:DatatypeProperty ;
+    rdfs:domain sar:DimensionScore ; rdfs:range xsd:integer ; rdfs:label "passed count"@en .
+sar:failedCount a owl:DatatypeProperty ;
+    rdfs:domain sar:DimensionScore ; rdfs:range xsd:integer ; rdfs:label "failed count"@en .
+sar:inapplicableCount a owl:DatatypeProperty ;
+    rdfs:domain sar:DimensionScore ; rdfs:range xsd:integer ; rdfs:label "inapplicable count"@en .
+
+################################################################
+# Individuals: normativity
+################################################################
+
+sar:Normative a sar:Normativity ;
+    rdfs:label "Normative"@en ;
+    rdfs:comment """Failing this check violates a published specification. The publisher is wrong by
+the standard's own terms, and the finding stands regardless of the publisher's local conventions."""@en .
+
+sar:Conventional a sar:Normativity ;
+    rdfs:label "Conventional"@en ;
+    rdfs:comment """Failing this check departs from a widely held community practice that is not
+mandated by any specification. The finding is advisory. A publisher who never adopted the
+convention has not done anything wrong, and a register that reports such deviations as defects is
+making a category error."""@en .
+
+################################################################
+# Individuals: severity
+################################################################
+
+sar:High a sar:Severity ; rdfs:label "High"@en ;
+    rdfs:comment "The asset cannot be used as published for its evident purpose, or reasoning over it is unsound."@en .
+sar:Medium a sar:Severity ; rdfs:label "Medium"@en ;
+    rdfs:comment "The asset is usable but reuse requires the consumer to do work the publisher should have done."@en .
+sar:Low a sar:Severity ; rdfs:label "Low"@en ;
+    rdfs:comment "The finding is real but has little practical consequence for a consumer."@en .
+
+################################################################
+# Individuals: asset kinds
+################################################################
+
+sar:OwlOntology a sar:AssetKind ;
+    skos:prefLabel "OWL ontology"@en ;
+    skos:definition "Asserts owl:Class, owl:ObjectProperty, owl:DatatypeProperty or OWL axioms."@en .
+
+sar:SkosScheme a sar:AssetKind ;
+    skos:prefLabel "SKOS concept scheme"@en ;
+    skos:definition "Asserts skos:Concept and skos:ConceptScheme structures."@en .
+
+sar:RdfsVocabulary a sar:AssetKind ;
+    skos:prefLabel "RDFS vocabulary"@en ;
+    skos:definition "Asserts rdfs:Class and rdf:Property without OWL axiomatisation."@en .
+
+sar:CodeList a sar:AssetKind ;
+    skos:prefLabel "Code list"@en ;
+    skos:definition "An enumerated controlled list, published in RDF or convertible to it."@en .
+
+sar:ShapeGraph a sar:AssetKind ;
+    skos:prefLabel "Shape graph"@en ;
+    skos:definition "Asserts SHACL node or property shapes."@en .
+
+################################################################
+# Individuals: dimensions
+################################################################
+
+sar:Retrievability a sar:Dimension ; skos:prefLabel "Retrievability"@en ;
+    skos:definition "Whether the asset can be obtained at all, from the identifier it advertises."@en .
+sar:Parseability a sar:Dimension ; skos:prefLabel "Parseability"@en ;
+    skos:definition "Whether the retrieved bytes are well formed in the serialisation they claim."@en .
+sar:LogicalSoundness a sar:Dimension ; skos:prefLabel "Logical soundness"@en ;
+    skos:definition "Profile conformance, consistency, and absence of unsatisfiable terms."@en .
+sar:Documentation a sar:Dimension ; skos:prefLabel "Documentation"@en ;
+    skos:definition "Whether terms carry the labels and definitions a human needs to reuse them."@en .
+sar:Governance a sar:Dimension ; skos:prefLabel "Governance"@en ;
+    skos:definition "Licence, versioning, provenance and contact: whether the asset can be relied on."@en .
+sar:Interoperability a sar:Dimension ; skos:prefLabel "Interoperability"@en ;
+    skos:definition "Reuse of existing vocabularies and declared mappings to them."@en .
+sar:Stability a sar:Dimension ; skos:prefLabel "Stability"@en ;
+    skos:definition "Deprecation hygiene and the durability of minted identifiers."@en .

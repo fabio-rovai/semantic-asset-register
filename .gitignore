@@ -1,0 +1,15 @@
+# Downloaded tooling (79 MB, fetched by pipeline/setup.sh)
+tools/robot.jar
+
+# Retrieved payloads and reasoning workspace. These are other people's
+# artefacts, some are tens of megabytes, and every one of them is
+# regenerable by running pipeline/probe.py. Hashes are recorded in
+# results/probe_results.json so a rerun can prove whether they changed.
+data/snapshots/
+data/work/
+data/mod_try.ttl
+
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

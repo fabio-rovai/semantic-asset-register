@@ -1,0 +1,432 @@
+@prefix sar:     <https://gov.tesseract.academy/def/sar#> .
+@prefix sarc:    <https://gov.tesseract.academy/def/sar/check#> .
+@prefix sara:    <https://gov.tesseract.academy/def/sar/authority#> .
+@prefix earl:    <http://www.w3.org/ns/earl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<https://gov.tesseract.academy/def/sar/check>
+    a owl:Ontology ;
+    dcterms:title "SAR check catalogue v0.1.0"@en ;
+    dcterms:description """The catalogue of checks run by the Semantic Asset Register. Each check is
+an earl:TestCase carrying four mandatory facets: the authority it derives from, the specific clause
+of that authority, whether it is normative or conventional, and the asset kinds to which it
+applies. A check that cannot name its authority does not belong in the catalogue.
+
+Of the 25 checks in this catalogue, 10 are normative, meaning a failure is a violation of a
+published specification, and 15 are conventional. Conventional findings are reported, counted
+and scored separately, and are never described as errors."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo "0.1.0" ;
+    owl:imports <https://gov.tesseract.academy/def/sar> .
+
+################################################################
+# Authorities
+################################################################
+
+sara:RDF11-Turtle a sar:Authority ;
+    rdfs:label "RDF 1.1 Turtle (W3C Recommendation, 25 February 2014)"@en ;
+    foaf:page <https://www.w3.org/TR/turtle/> .
+
+sara:RDF11-XML a sar:Authority ;
+    rdfs:label "RDF 1.1 XML Syntax (W3C Recommendation, 25 February 2014)"@en ;
+    foaf:page <https://www.w3.org/TR/rdf-syntax-grammar/> .
+
+sara:XML10 a sar:Authority ;
+    rdfs:label "Extensible Markup Language (XML) 1.0 (W3C Recommendation, Fifth Edition, 26 November 2008)"@en ;
+    foaf:page <https://www.w3.org/TR/xml/> .
+
+sara:OWL2-Profiles a sar:Authority ;
+    rdfs:label "OWL 2 Web Ontology Language Profiles (W3C Recommendation, 2nd Edition, 11 December 2012)"@en ;
+    foaf:page <https://www.w3.org/TR/owl2-profiles/> .
+
+sara:OWL2-Semantics a sar:Authority ;
+    rdfs:label "OWL 2 Web Ontology Language Direct Semantics (W3C Recommendation, 2nd Edition, 11 December 2012)"@en ;
+    foaf:page <https://www.w3.org/TR/owl2-direct-semantics/> .
+
+sara:SKOS-Reference a sar:Authority ;
+    rdfs:label "SKOS Simple Knowledge Organization System Reference (W3C Recommendation, 18 August 2009)"@en ;
+    foaf:page <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:comment "Integrity conditions are numbered S1 to S46 in the Reference and are stated normatively."@en .
+
+sara:W3C-BPR a sar:Authority ;
+    rdfs:label "Best Practice Recipes for Publishing RDF Vocabularies (W3C Working Group Note, 28 August 2008)"@en ;
+    foaf:page <https://www.w3.org/TR/swbp-vocab-pub/> ;
+    rdfs:comment "A Working Group Note, not a Recommendation. Checks derived from it are therefore conventional, however widely they are treated as obligatory."@en .
+
+sara:OMB-M-15-13 a sar:Authority ;
+    rdfs:label "OMB Memorandum M-15-13, Policy to Require Secure Connections across Federal Websites and Web Services (8 June 2015)"@en ;
+    foaf:page <https://https.cio.gov/> ;
+    rdfs:comment """Binding on US federal agencies, with a compliance deadline of 31 December 2016.
+This is the one authority in the catalogue that is normative by force of government policy rather
+than by force of a standards body, and it applies only to assets published on federal domains."""@en .
+
+sara:DCAT-US a sar:Authority ;
+    rdfs:label "DCAT-US metadata schema (resources.data.gov)"@en ;
+    foaf:page <https://resources.data.gov/resources/dcat-us/> ;
+    rdfs:comment """In DCAT-US v1.1 the license field is Required-if-Applicable rather than Required,
+and the schema governs catalogue records rather than the RDF payload itself. Checks derived from it
+against the payload are therefore conventional."""@en .
+
+sara:CommunityPractice a sar:Authority ;
+    rdfs:label "Widely held community practice in ontology engineering"@en ;
+    rdfs:comment """Used where a check reflects practice that is genuinely widespread but is not
+written down in any specification the publisher can be held to. Naming this honestly, rather than
+dressing convention up as standard, is a design commitment of this register."""@en .
+
+################################################################
+# Check catalogue
+################################################################
+
+sarc:Catalogue a skos:ConceptScheme ;
+    skos:prefLabel "SAR check catalogue"@en .
+
+#### Retrievability ############################################
+
+sarc:R01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-R01" ;
+    skos:prefLabel "Download URL resolves"@en ;
+    dcterms:description "The advertised download URL returns a 2xx status within the timeout."@en ;
+    sar:dimension sar:Retrievability ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Recipes 1 to 6, which all presuppose that the published URL serves the vocabulary" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph .
+
+sarc:R02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-R02" ;
+    skos:prefLabel "Namespace URI dereferences"@en ;
+    dcterms:description "The namespace the asset mints terms in is itself retrievable, so that a consumer encountering a term can look it up."@en ;
+    sar:dimension sar:Retrievability ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Section 2, on making vocabulary URIs dereferenceable" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:R03 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-R03" ;
+    skos:prefLabel "Serves RDF under content negotiation"@en ;
+    dcterms:description "A request with an RDF Accept header returns an RDF serialisation rather than HTML."@en ;
+    sar:dimension sar:Retrievability ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Recipes 3 to 6, on content negotiation" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:R04 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-R04" ;
+    skos:prefLabel "Served over HTTPS with a valid certificate"@en ;
+    dcterms:description "The asset is retrievable over HTTPS and the certificate validates. Applies to assets published on US federal domains."@en ;
+    sar:dimension sar:Retrievability ;
+    sar:derivesFrom sara:OMB-M-15-13 ;
+    sar:citation "Requirement that all publicly accessible federal websites and web services provide service only through a secure connection" ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph .
+
+#### Parseability ##############################################
+
+sarc:P01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-P01" ;
+    skos:prefLabel "Parses as RDF"@en ;
+    dcterms:description "The retrieved bytes parse without error in the serialisation they are served or named as."@en ;
+    sar:dimension sar:Parseability ;
+    sar:derivesFrom sara:RDF11-Turtle ;
+    sar:citation "Turtle grammar; equivalently the RDF/XML grammar for RDF/XML payloads" ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph .
+
+sarc:P02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-P02" ;
+    skos:prefLabel "Media type matches serialisation"@en ;
+    dcterms:description "The Content-Type header names the serialisation actually returned."@en ;
+    sar:dimension sar:Parseability ;
+    sar:derivesFrom sara:RDF11-Turtle ;
+    sar:citation "Media type registration text/turtle; and application/rdf+xml per RDF 1.1 XML Syntax" ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Low ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph .
+
+sarc:P03 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-P03" ;
+    skos:prefLabel "Payload is self-describing"@en ;
+    dcterms:description """The payload can be decoded without help from the transport layer: an XML
+entity is either valid UTF-8 or carries an encoding declaration."""@en ;
+    sar:dimension sar:Parseability ;
+    sar:derivesFrom sara:XML10 ;
+    sar:citation "Section 4.3.3, on character encoding in entities" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph ;
+    rdfs:comment """Graded conventional rather than normative because XML 1.0 expressly permits an
+external transport protocol to supply the encoding, so a file served with a correct HTTP charset
+parameter breaks no rule. The consequence is nonetheless real: the moment such a payload is saved
+to disk, mirrored, or passed to a tool that does not carry the HTTP headers with it, it can no
+longer be decoded. Self-description is what makes an artefact survive being moved."""@en .
+
+#### Logical soundness #########################################
+
+sarc:L01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L01" ;
+    skos:prefLabel "Conforms to OWL 2 DL"@en ;
+    dcterms:description "The ontology falls within the OWL 2 DL profile, and is therefore within reach of a complete reasoner."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:OWL2-Profiles ;
+    sar:citation "OWL 2 DL profile definition" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology ;
+    rdfs:comment """Graded conventional deliberately. Publishing OWL 2 Full is a design choice, not a
+specification violation, and several large and useful vocabularies sit outside DL on purpose. The
+consequence, that no complete reasoner will process the asset, is reported as a fact rather than as
+a defect."""@en .
+
+sarc:L02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L02" ;
+    skos:prefLabel "Logically consistent"@en ;
+    dcterms:description "A reasoner finds at least one model of the ontology."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:OWL2-Semantics ;
+    sar:citation "Direct Semantics; an inconsistent ontology entails every axiom and is unusable for inference" ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology .
+
+sarc:L03 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L03" ;
+    skos:prefLabel "No unsatisfiable classes"@en ;
+    dcterms:description "No named class in the ontology is equivalent to owl:Nothing."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:CommunityPractice ;
+    sar:citation "Unsatisfiable named classes are legal OWL but are treated as modelling defects across the field" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology .
+
+sarc:L04 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L04" ;
+    skos:prefLabel "Concept and ConceptScheme disjoint"@en ;
+    dcterms:description "No resource is both a skos:Concept and a skos:ConceptScheme."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S9: skos:ConceptScheme is disjoint with skos:Concept." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+sarc:L05 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L05" ;
+    skos:prefLabel "Label properties pairwise disjoint"@en ;
+    dcterms:description "No resource carries the same literal as both a prefLabel and an altLabel, or any other pair among prefLabel, altLabel and hiddenLabel."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S13: skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+sarc:L06 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L06" ;
+    skos:prefLabel "One preferred label per language"@en ;
+    dcterms:description "No resource has more than one skos:prefLabel with the same language tag."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S14: A resource has no more than one value of skos:prefLabel per language tag." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+sarc:L07 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L07" ;
+    skos:prefLabel "related disjoint with broaderTransitive"@en ;
+    dcterms:description "No pair of concepts is linked both associatively and hierarchically."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S27: skos:related is disjoint with the property skos:broaderTransitive." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+sarc:L08 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L08" ;
+    skos:prefLabel "Collection disjoint with Concept and ConceptScheme"@en ;
+    dcterms:description "No resource is both a skos:Collection and a skos:Concept or skos:ConceptScheme."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S37: skos:Collection is disjoint with each of skos:Concept and skos:ConceptScheme." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+sarc:L09 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-L09" ;
+    skos:prefLabel "exactMatch disjoint with broadMatch and relatedMatch"@en ;
+    dcterms:description "No pair of concepts is asserted both as an exact match and as a broader or associative match."@en ;
+    sar:dimension sar:LogicalSoundness ;
+    sar:derivesFrom sara:SKOS-Reference ;
+    sar:citation "S46: skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch." ;
+    sar:normativity sar:Normative ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:SkosScheme .
+
+#### Documentation #############################################
+
+sarc:D01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-D01" ;
+    skos:prefLabel "Minted terms carry labels"@en ;
+    dcterms:description "Every class, property or concept minted in the asset's own namespace has an rdfs:label or skos:prefLabel."@en ;
+    sar:dimension sar:Documentation ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Section 4, on providing human readable labels" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:D02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-D02" ;
+    skos:prefLabel "Minted terms carry definitions"@en ;
+    dcterms:description "Every minted term has a definition, comment or scope note giving its intended meaning."@en ;
+    sar:dimension sar:Documentation ;
+    sar:derivesFrom sara:CommunityPractice ;
+    sar:citation "Definitions are required by every published ontology documentation guideline surveyed, and by none of the W3C Recommendations" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:D03 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-D03" ;
+    skos:prefLabel "Asset declares title and description"@en ;
+    dcterms:description "The ontology or scheme resource carries a title and a description or comment."@en ;
+    sar:dimension sar:Documentation ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Section 4, on vocabulary level metadata" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Low ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+#### Governance ################################################
+
+sarc:G01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-G01" ;
+    skos:prefLabel "Declares a licence"@en ;
+    dcterms:description "The asset states its licence or rights position in the payload itself, so that a consumer who has only the file knows the terms."@en ;
+    sar:dimension sar:Governance ;
+    sar:derivesFrom sara:DCAT-US ;
+    sar:citation "license field, Required-if-Applicable in DCAT-US v1.1" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:High ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary, sar:CodeList, sar:ShapeGraph ;
+    rdfs:comment """Severity is high while normativity is conventional. A consumer who cannot
+determine the licence of a vocabulary cannot lawfully redistribute derived data, which is a serious
+practical obstacle, but no specification compels the publisher to state it inside the payload."""@en .
+
+sarc:G02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-G02" ;
+    skos:prefLabel "Declares a version"@en ;
+    dcterms:description "The asset carries owl:versionIRI, owl:versionInfo, or a dated equivalent."@en ;
+    sar:dimension sar:Governance ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Section 4, on versioning published vocabularies" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:G03 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-G03" ;
+    skos:prefLabel "Declares a publisher or creator"@en ;
+    dcterms:description "The asset names an accountable publisher or creator in the payload."@en ;
+    sar:dimension sar:Governance ;
+    sar:derivesFrom sara:DCAT-US ;
+    sar:citation "publisher field, Required in DCAT-US v1.1 for catalogue records" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+#### Stability #################################################
+
+sarc:S01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-S01" ;
+    skos:prefLabel "Deprecated terms name a successor"@en ;
+    dcterms:description "Every term marked deprecated carries a replacement pointer or an explanatory note."@en ;
+    sar:dimension sar:Stability ;
+    sar:derivesFrom sara:CommunityPractice ;
+    sar:citation "Deprecation without a successor pointer strands every downstream consumer" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:S02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-S02" ;
+    skos:prefLabel "No live references to deprecated terms"@en ;
+    dcterms:description "No non-deprecated axiom in the asset refers to a term the asset itself marks as deprecated."@en ;
+    sar:dimension sar:Stability ;
+    sar:derivesFrom sara:CommunityPractice ;
+    sar:citation "Internal references to deprecated terms indicate an incomplete migration" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Low ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+#### Interoperability ##########################################
+
+sarc:I01 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-I01" ;
+    skos:prefLabel "Reuses external vocabularies"@en ;
+    dcterms:description "The asset uses vocabulary terms, in predicate position or as rdf:type, from at least one namespace other than its own and the core W3C namespaces."@en ;
+    sar:dimension sar:Interoperability ;
+    sar:derivesFrom sara:CommunityPractice ;
+    sar:citation "Reuse over reinvention is the field's most consistently stated design principle" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Low ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary .
+
+sarc:I02 a earl:TestCase, skos:Concept ;
+    skos:inScheme sarc:Catalogue ;
+    dcterms:identifier "SAR-I02" ;
+    skos:prefLabel "External dependencies still resolve"@en ;
+    dcterms:description """Each external vocabulary term the asset depends on is itself retrievable,
+so that a consumer encountering it can look it up and the asset's dependencies have not rotted.
+Evaluated over a deterministic sample of the referenced terms."""@en ;
+    sar:dimension sar:Interoperability ;
+    sar:derivesFrom sara:W3C-BPR ;
+    sar:citation "Section 2, applied transitively to the asset's dependencies" ;
+    sar:normativity sar:Conventional ;
+    sar:severity sar:Medium ;
+    sar:appliesToKind sar:OwlOntology, sar:SkosScheme, sar:RdfsVocabulary ;
+    rdfs:comment """This check probes the referenced terms themselves rather than namespace prefixes
+derived by truncating them. Truncation produces false failures against strings no publisher ever
+minted: http://id.loc.gov/vocabulary/ returns 404 while every real sub-namespace beneath it
+resolves. The distinction matters because a register that reports invented URIs as broken
+dependencies is measuring its own regex, not the estate."""@en .

@@ -1,0 +1,5871 @@
+{
+  "loc-relators": {
+    "id": "loc-relators",
+    "agency": "Library of Congress",
+    "name": "MARC Relator Terms",
+    "namespace": "http://id.loc.gov/vocabulary/relators/",
+    "kinds": [
+      "OwlOntology",
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 1846,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 1846,
+        "example": null,
+        "info": "parsed 1846 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "failed",
+        "affected": 305,
+        "population": 305,
+        "example": "http://id.loc.gov/vocabulary/relators/rce",
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 305,
+        "population": 305,
+        "example": "http://id.loc.gov/vocabulary/relators/rce",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 17,
+        "example": "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember",
+        "info": "1 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-relators-reasoned.owl"
+      },
+      "L03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://id.loc.gov/ontologies/bibframe/Role": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#definitionNote": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember": false
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-countries": {
+    "id": "loc-countries",
+    "agency": "Library of Congress",
+    "name": "MARC Countries",
+    "namespace": "http://id.loc.gov/vocabulary/countries/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 3027,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 3027,
+        "example": null,
+        "info": "parsed 3027 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 335,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 334,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 334,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 334,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 334,
+        "population": 334,
+        "example": "http://id.loc.gov/vocabulary/countries/xj",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 17,
+        "example": null,
+        "info": "0 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#Geographic": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-languages": {
+    "id": "loc-languages",
+    "agency": "Library of Congress",
+    "name": "MARC Languages",
+    "namespace": "http://id.loc.gov/vocabulary/languages/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 6308,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 6308,
+        "example": null,
+        "info": "parsed 6308 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 486,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 485,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 485,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 485,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 485,
+        "population": 485,
+        "example": "http://id.loc.gov/vocabulary/languages/mga",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 17,
+        "example": null,
+        "info": "0 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#Language": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-geographicareas": {
+    "id": "loc-geographicareas",
+    "agency": "Library of Congress",
+    "name": "MARC Geographic Areas",
+    "namespace": "http://id.loc.gov/vocabulary/geographicAreas/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 291,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 291,
+        "example": null,
+        "info": "parsed 291 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 31,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 30,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 30,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 30,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 30,
+        "population": 30,
+        "example": "http://id.loc.gov/vocabulary/geographicAreas/s",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 17,
+        "example": null,
+        "info": "0 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#Geographic": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-iso639-2": {
+    "id": "loc-iso639-2",
+    "agency": "Library of Congress",
+    "name": "ISO 639-2 Languages",
+    "namespace": "http://id.loc.gov/vocabulary/iso639-2/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 8580,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 8580,
+        "example": null,
+        "info": "parsed 8580 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 508,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 507,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "failed",
+        "affected": 507,
+        "population": 507,
+        "example": "http://id.loc.gov/vocabulary/iso639-2/jrb",
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 507,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 507,
+        "population": 507,
+        "example": "http://id.loc.gov/vocabulary/iso639-2/jrb",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 5,
+        "population": null,
+        "example": "http://www.loc.gov/mads/rdf/v1#Language",
+        "info": "5 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 5,
+        "example": null,
+        "info": "0 of 5 referenced external terms did not resolve; 1 referenced namespace(s) are not absolute HTTP URIs, e.g. //www.loc.gov/mads/rdf/v1#"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://www.loc.gov/mads/rdf/v1#Language": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": [
+      "//www.loc.gov/mads/rdf/v1#"
+    ]
+  },
+  "loc-iso639-5": {
+    "id": "loc-iso639-5",
+    "agency": "Library of Congress",
+    "name": "ISO 639-5 Language Families",
+    "namespace": "http://id.loc.gov/vocabulary/iso639-5/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 333,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 333,
+        "example": null,
+        "info": "parsed 333 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 27,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 26,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 26,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 26,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 26,
+        "population": 26,
+        "example": "http://id.loc.gov/vocabulary/iso639-5/jpx",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 17,
+        "example": null,
+        "info": "0 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#Language": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-preservation": {
+    "id": "loc-preservation",
+    "agency": "Library of Congress",
+    "name": "PREMIS Preservation Vocabularies",
+    "namespace": "http://id.loc.gov/vocabulary/preservation/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 152,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 152,
+        "example": null,
+        "info": "parsed 152 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 31,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 30,
+        "population": 31,
+        "example": "http://id.loc.gov/vocabulary/preservation/copyrightStatus",
+        "info": "1/31 titled, 1/31 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 13,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "13 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 13,
+        "example": null,
+        "info": "0 of 13 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#DeprecatedAuthority": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-carriers": {
+    "id": "loc-carriers",
+    "agency": "Library of Congress",
+    "name": "RDA Carrier Types",
+    "namespace": "http://id.loc.gov/vocabulary/carriers/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 247,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 247,
+        "example": null,
+        "info": "parsed 247 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 17,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "17 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 17,
+        "example": "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember",
+        "info": "1 of 17 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#definitionNote": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember": false
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-contentTypes": {
+    "id": "loc-contentTypes",
+    "agency": "Library of Congress",
+    "name": "RDA Content Types",
+    "namespace": "http://id.loc.gov/vocabulary/contentTypes/",
+    "kinds": [
+      "OwlOntology",
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 171,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 171,
+        "example": null,
+        "info": "parsed 171 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "failed",
+        "affected": 24,
+        "population": 24,
+        "example": "http://id.loc.gov/vocabulary/contentTypes/snd",
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 24,
+        "population": 24,
+        "example": "http://id.loc.gov/vocabulary/contentTypes/snd",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 18,
+        "population": null,
+        "example": "http://bibframe.org/vocab/Category",
+        "info": "18 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 18,
+        "example": "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember",
+        "info": "1 of 18 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-contentTypes-reasoned.owl"
+      },
+      "L03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1"
+      }
+    },
+    "external_namespaces": {
+      "http://bibframe.org/vocab/Category": true,
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#definitionNote": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember": false
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-mediaTypes": {
+    "id": "loc-mediaTypes",
+    "agency": "Library of Congress",
+    "name": "RDA Media Types",
+    "namespace": "http://id.loc.gov/vocabulary/mediaTypes/",
+    "kinds": [
+      "OwlOntology",
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 83,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 83,
+        "example": null,
+        "info": "parsed 83 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "failed",
+        "affected": 10,
+        "population": 10,
+        "example": "http://id.loc.gov/vocabulary/mediaTypes/h",
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 10,
+        "population": 10,
+        "example": "http://id.loc.gov/vocabulary/mediaTypes/h",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 18,
+        "population": null,
+        "example": "http://bibframe.org/vocab/Category",
+        "info": "18 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 18,
+        "example": "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember",
+        "info": "1 of 18 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1: ONTOLOGY STORAGE ERROR Could not save ontology to IRI: file:/Users/fabio/projects/semantic-asset-register/data/work/loc-mediaTypes-reasoned.owl"
+      },
+      "L03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1"
+      }
+    },
+    "external_namespaces": {
+      "http://bibframe.org/vocab/Category": true,
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#definitionNote": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember": false
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-graphicMaterials": {
+    "id": "loc-graphicMaterials",
+    "agency": "Library of Congress",
+    "name": "Thesaurus for Graphic Materials",
+    "namespace": "http://id.loc.gov/vocabulary/graphicMaterials/",
+    "kinds": [
+      "CodeList"
+    ],
+    "format": "xml",
+    "triples": 23716,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 23716,
+        "example": null,
+        "info": "parsed 23716 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:Ontology or skos:ConceptScheme resource declared"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 10,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "10 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 10,
+        "example": "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember",
+        "info": "1 of 10 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#Topic": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember": false,
+      "http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-ethnographicTerms": {
+    "id": "loc-ethnographicTerms",
+    "agency": "Library of Congress",
+    "name": "Ethnographic Thesaurus",
+    "namespace": "http://id.loc.gov/vocabulary/ethnographicTerms/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 228,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 228,
+        "example": null,
+        "info": "parsed 228 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 26,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 25,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 25,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 25,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 25,
+        "population": 25,
+        "example": "http://id.loc.gov/vocabulary/ethnographicTerms/afset020334",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 19,
+        "population": null,
+        "example": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+        "info": "19 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 19,
+        "example": null,
+        "info": "0 of 19 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": true,
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": true,
+      "http://purl.org/vocab/changeset/schema#ChangeSet": true,
+      "http://purl.org/vocab/changeset/schema#changeReason": true,
+      "http://purl.org/vocab/changeset/schema#createdDate": true,
+      "http://purl.org/vocab/changeset/schema#creatorName": true,
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": true,
+      "http://www.loc.gov/mads/rdf/v1#Authority": true,
+      "http://www.loc.gov/mads/rdf/v1#CorporateName": true,
+      "http://www.loc.gov/mads/rdf/v1#MADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#Topic": true,
+      "http://www.loc.gov/mads/rdf/v1#adminMetadata": true,
+      "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": true,
+      "http://www.loc.gov/mads/rdf/v1#code": true,
+      "http://www.loc.gov/mads/rdf/v1#hasMADSCollectionMember": true,
+      "http://www.loc.gov/mads/rdf/v1#hasTopMemberOfMADSScheme": true,
+      "http://www.loc.gov/mads/rdf/v1#scopeNote": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "loc-madsrdf": {
+    "id": "loc-madsrdf",
+    "agency": "Library of Congress",
+    "name": "MADS/RDF ontology",
+    "namespace": "http://www.loc.gov/mads/rdf/v1#",
+    "kinds": [],
+    "format": "xml",
+    "triples": null,
+    "note": "parse error as xml: None:340:3: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#resource",
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "parse error as xml: None:340:3: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#resource"
+      },
+      "P02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "serialisation undetermined because parsing failed"
+      },
+      "L01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L04": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L05": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L06": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L07": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L08": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "L09": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "D03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "G01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "G02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "G03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "S01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "S02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "I01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      },
+      "I02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "payload did not parse"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": null
+  },
+  "loc-premis3": {
+    "id": "loc-premis3",
+    "agency": "Library of Congress",
+    "name": "PREMIS 3 ontology",
+    "namespace": "http://www.loc.gov/premis/rdf/v3/",
+    "kinds": [
+      "OwlOntology"
+    ],
+    "format": "xml",
+    "triples": 471,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 471,
+        "example": null,
+        "info": "parsed 471 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 68,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 40,
+        "population": 68,
+        "example": "http://www.loc.gov/premis/rdf/v3/determinationDate",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": []
+  },
+  "loc-bibframe": {
+    "id": "loc-bibframe",
+    "agency": "Library of Congress",
+    "name": "BIBFRAME 2.x vocabulary",
+    "namespace": "http://id.loc.gov/ontologies/bibframe/",
+    "kinds": [
+      "OwlOntology"
+    ],
+    "format": "xml",
+    "triples": 2735,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 2735,
+        "example": null,
+        "info": "parsed 2735 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 450,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 450,
+        "example": null,
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 1,
+        "population": null,
+        "example": "http://creativecommons.org/ns#license",
+        "info": "1 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "0 of 1 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": {
+      "http://creativecommons.org/ns#license": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nlm-mesh-vocab": {
+    "id": "nlm-mesh-vocab",
+    "agency": "National Library of Medicine",
+    "name": "MeSH RDF vocabulary",
+    "namespace": "http://id.nlm.nih.gov/mesh/vocab#",
+    "kinds": [
+      "OwlOntology"
+    ],
+    "format": "xml",
+    "triples": 342,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/rdf+xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 342,
+        "example": null,
+        "info": "parsed 342 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 65,
+        "example": "http://id.nlm.nih.gov/mesh/vocab#broader",
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 65,
+        "example": "http://id.nlm.nih.gov/mesh/vocab#broader",
+        "info": null
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 1,
+        "example": "http://id.nlm.nih.gov/mesh/vocab#",
+        "info": "0/1 titled, 0/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": []
+  },
+  "nasa-gcmd-science": {
+    "id": "nasa-gcmd-science",
+    "agency": "NASA",
+    "name": "GCMD Science Keywords",
+    "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 24268,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 24268,
+        "example": null,
+        "info": "parsed 24268 triples as xml"
+      },
+      "P02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/xml, which is not an RDF media type; parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 567,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:Ontology or skos:ConceptScheme resource declared"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 10,
+        "population": null,
+        "example": "https://gcmd.earthdata.nasa.gov/kms#altLabel",
+        "info": "10 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 10,
+        "example": null,
+        "info": "0 of 10 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "https://gcmd.earthdata.nasa.gov/kms#altLabel": true,
+      "https://gcmd.earthdata.nasa.gov/kms#gcmd": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hits": true,
+      "https://gcmd.earthdata.nasa.gov/kms#keywordVersion": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_num": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_size": true,
+      "https://gcmd.earthdata.nasa.gov/kms#reference": true,
+      "https://gcmd.earthdata.nasa.gov/kms#termsOfUse": true,
+      "https://gcmd.earthdata.nasa.gov/kms#text": true,
+      "https://gcmd.earthdata.nasa.gov/kms#viewer": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nasa-gcmd-platforms": {
+    "id": "nasa-gcmd-platforms",
+    "agency": "NASA",
+    "name": "GCMD Platforms",
+    "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 24247,
+    "note": "gzip decompressed",
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 24247,
+        "example": null,
+        "info": "parsed 24247 triples as xml"
+      },
+      "P02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/xml, which is not an RDF media type; parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1309,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1309,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1309,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "failed",
+        "affected": 6,
+        "population": 32,
+        "example": "043dc242-1014-4e9a-91ee-c472b791b026",
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:Ontology or skos:ConceptScheme resource declared"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 15,
+        "population": null,
+        "example": "https://gcmd.earthdata.nasa.gov/kms#altLabel",
+        "info": "15 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 15,
+        "example": null,
+        "info": "0 of 15 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "https://gcmd.earthdata.nasa.gov/kms#altLabel": true,
+      "https://gcmd.earthdata.nasa.gov/kms#category": true,
+      "https://gcmd.earthdata.nasa.gov/kms#gcmd": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hasInstrument": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hits": true,
+      "https://gcmd.earthdata.nasa.gov/kms#keywordVersion": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_num": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_size": true,
+      "https://gcmd.earthdata.nasa.gov/kms#reference": true,
+      "https://gcmd.earthdata.nasa.gov/kms#resource": true,
+      "https://gcmd.earthdata.nasa.gov/kms#termsOfUse": true,
+      "https://gcmd.earthdata.nasa.gov/kms#text": true,
+      "https://gcmd.earthdata.nasa.gov/kms#type": true,
+      "https://gcmd.earthdata.nasa.gov/kms#url": true,
+      "https://gcmd.earthdata.nasa.gov/kms#viewer": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nasa-gcmd-instruments": {
+    "id": "nasa-gcmd-instruments",
+    "agency": "NASA",
+    "name": "GCMD Instruments",
+    "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 26701,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 26701,
+        "example": null,
+        "info": "parsed 26701 triples as xml"
+      },
+      "P02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/xml, which is not an RDF media type; parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 118,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:Ontology or skos:ConceptScheme resource declared"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 16,
+        "population": null,
+        "example": "https://gcmd.earthdata.nasa.gov/kms#altLabel",
+        "info": "16 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 16,
+        "example": null,
+        "info": "0 of 16 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "https://gcmd.earthdata.nasa.gov/kms#altLabel": true,
+      "https://gcmd.earthdata.nasa.gov/kms#category": true,
+      "https://gcmd.earthdata.nasa.gov/kms#gcmd": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hasSensor": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hits": true,
+      "https://gcmd.earthdata.nasa.gov/kms#isOnPlatform": true,
+      "https://gcmd.earthdata.nasa.gov/kms#keywordVersion": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_num": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_size": true,
+      "https://gcmd.earthdata.nasa.gov/kms#reference": true,
+      "https://gcmd.earthdata.nasa.gov/kms#resource": true,
+      "https://gcmd.earthdata.nasa.gov/kms#termsOfUse": true,
+      "https://gcmd.earthdata.nasa.gov/kms#text": true,
+      "https://gcmd.earthdata.nasa.gov/kms#type": true,
+      "https://gcmd.earthdata.nasa.gov/kms#url": true,
+      "https://gcmd.earthdata.nasa.gov/kms#viewer": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nasa-gcmd-providers": {
+    "id": "nasa-gcmd-providers",
+    "agency": "NASA",
+    "name": "GCMD Providers",
+    "namespace": "https://gcmd.earthdata.nasa.gov/kms/concepts/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 26155,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served application/xml under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 26155,
+        "example": null,
+        "info": "parsed 26155 triples as xml"
+      },
+      "P02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/xml, which is not an RDF media type; parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2000,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:Ontology or skos:ConceptScheme resource declared"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload; note the asset declares no ontology or scheme resource to carry it"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 14,
+        "population": null,
+        "example": "https://gcmd.earthdata.nasa.gov/kms#altLabel",
+        "info": "14 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 14,
+        "example": null,
+        "info": "0 of 14 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": {
+      "https://gcmd.earthdata.nasa.gov/kms#altLabel": true,
+      "https://gcmd.earthdata.nasa.gov/kms#category": true,
+      "https://gcmd.earthdata.nasa.gov/kms#gcmd": true,
+      "https://gcmd.earthdata.nasa.gov/kms#hits": true,
+      "https://gcmd.earthdata.nasa.gov/kms#keywordVersion": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_num": true,
+      "https://gcmd.earthdata.nasa.gov/kms#page_size": true,
+      "https://gcmd.earthdata.nasa.gov/kms#reference": true,
+      "https://gcmd.earthdata.nasa.gov/kms#resource": true,
+      "https://gcmd.earthdata.nasa.gov/kms#termsOfUse": true,
+      "https://gcmd.earthdata.nasa.gov/kms#text": true,
+      "https://gcmd.earthdata.nasa.gov/kms#type": true,
+      "https://gcmd.earthdata.nasa.gov/kms#url": true,
+      "https://gcmd.earthdata.nasa.gov/kms#viewer": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "usgs-thesaurus": {
+    "id": "usgs-thesaurus",
+    "agency": "USGS",
+    "name": "USGS Thesaurus",
+    "namespace": "https://apps.usgs.gov/thesaurus/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 9689,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served text/html under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 9689,
+        "example": null,
+        "info": "parsed 9689 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1027,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1026,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1026,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 1106,
+        "example": "https://apps.usgs.gov/thesaurus/USGSThesaurus/controlled%20fires",
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1026,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1026,
+        "example": null,
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": []
+  },
+  "usgs-geographic": {
+    "id": "usgs-geographic",
+    "agency": "USGS",
+    "name": "USGS Common Geographic Areas",
+    "namespace": "https://apps.usgs.gov/thesaurus/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 840572,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served text/html under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 840572,
+        "example": null,
+        "info": "parsed 840572 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 51522,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 51521,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 51521,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "failed",
+        "affected": 4700,
+        "population": 246221,
+        "example": "https://apps.usgs.gov/thesaurus/CommonGeographicAreas/King",
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 51521,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 51521,
+        "example": null,
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no owl:versionIRI, owl:versionInfo or dated metadata"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": []
+  },
+  "usda-nalt": {
+    "id": "usda-nalt",
+    "agency": "USDA National Agricultural Library",
+    "name": "NAL Agricultural Thesaurus (full)",
+    "namespace": "https://lod.nal.usda.gov/nalt/",
+    "kinds": [
+      "OwlOntology",
+      "SkosScheme"
+    ],
+    "format": "turtle",
+    "triples": 1153267,
+    "note": "zip member nalt-full_dwn_20240716.ttl of 1",
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served text/html under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 1153267,
+        "example": null,
+        "info": "parsed 1153267 triples as turtle"
+      },
+      "P02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "delivered as archive (application/zip)"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 76692,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 76691,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "failed",
+        "affected": 32,
+        "population": 76691,
+        "example": "https://lod.nal.usda.gov/nalt/190060",
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 21740,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 44355,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 76691,
+        "example": null,
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 69089,
+        "population": 76691,
+        "example": "https://lod.nal.usda.gov/nalt/233394",
+        "info": null
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 11,
+        "population": null,
+        "example": "https://lod.nal.usda.gov/naltv#Chemical",
+        "info": "11 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 11,
+        "example": null,
+        "info": "0 of 11 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 5,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": {
+      "https://lod.nal.usda.gov/naltv#Chemical": true,
+      "https://lod.nal.usda.gov/naltv#Definition": true,
+      "https://lod.nal.usda.gov/naltv#Geographical": true,
+      "https://lod.nal.usda.gov/naltv#Organism": true,
+      "https://lod.nal.usda.gov/naltv#Product": true,
+      "https://lod.nal.usda.gov/naltv#Topic": true,
+      "https://lod.nal.usda.gov/naltv#hasProduct": true,
+      "https://lod.nal.usda.gov/naltv#marc001": true,
+      "https://lod.nal.usda.gov/naltv#marc001previous": true,
+      "https://lod.nal.usda.gov/naltv#productOf": true,
+      "https://lod.nal.usda.gov/naltv#taxonomicRank": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "noaa-paleo": {
+    "id": "noaa-paleo",
+    "agency": "NOAA NCEI",
+    "name": "Paleoenvironmental Thesaurus",
+    "namespace": "https://www.ncei.noaa.gov/access/paleo-search/skos/",
+    "kinds": [
+      "SkosScheme"
+    ],
+    "format": "xml",
+    "triples": 27326,
+    "note": "recoded from transport charset iso-8859-1",
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 404"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "namespace returned HTTP 404"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "not valid UTF-8 and carries no XML encoding declaration; first bad byte 0xf1 at offset 9497 in 'n index of the El Ni\u00f1o Southern Oscillat'"
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 27326,
+        "example": null,
+        "info": "parsed 27326 triples as xml"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared application/rdf+xml (xml), parsed as xml"
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2538,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2537,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2537,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 2873,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 788,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      },
+      "L03": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset is not an OWL ontology"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": [
+      "www.mindat.org/"
+    ]
+  },
+  "dcat-us-shacl": {
+    "id": "dcat-us-shacl",
+    "agency": "GSA / CDO Council",
+    "name": "DCAT-US 3.0 SHACL shapes",
+    "namespace": "http://resources.data.gov/vocab/dcat-us/v3/",
+    "kinds": [
+      "OwlOntology",
+      "ShapeGraph"
+    ],
+    "format": "turtle",
+    "triples": 4042,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 404"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "namespace returned HTTP 404"
+      },
+      "R04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "not published on a .gov or .mil domain"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 4042,
+        "example": null,
+        "info": "parsed 4042 triples as turtle"
+      },
+      "P02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 18,
+        "population": null,
+        "example": "http://data.resources.gov/shapes/dcat-us#requirementLevel",
+        "info": "18 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 18,
+        "example": "http://data.resources.gov/shapes/dcat-us#requirementLevel",
+        "info": "1 of 18 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 266,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.w3.org/ns/shacl#> Cause: Server returned HTTP response code: 429 for URL: https://www.w3.org/ns/shacl"
+      },
+      "L03": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "reasoner exited 1"
+      }
+    },
+    "external_namespaces": {
+      "http://data.resources.gov/shapes/dcat-us#requirementLevel": false,
+      "http://www.w3.org/ns/shacl#NodeShape": true,
+      "http://www.w3.org/ns/shacl#PropertyShape": true,
+      "http://www.w3.org/ns/shacl#class": true,
+      "http://www.w3.org/ns/shacl#datatype": true,
+      "http://www.w3.org/ns/shacl#description": true,
+      "http://www.w3.org/ns/shacl#maxCount": true,
+      "http://www.w3.org/ns/shacl#maxInclusive": true,
+      "http://www.w3.org/ns/shacl#message": true,
+      "http://www.w3.org/ns/shacl#minCount": true,
+      "http://www.w3.org/ns/shacl#minInclusive": true,
+      "http://www.w3.org/ns/shacl#name": true,
+      "http://www.w3.org/ns/shacl#nodeKind": true,
+      "http://www.w3.org/ns/shacl#or": true,
+      "http://www.w3.org/ns/shacl#path": true,
+      "http://www.w3.org/ns/shacl#property": true,
+      "http://www.w3.org/ns/shacl#severity": true,
+      "http://www.w3.org/ns/shacl#targetClass": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nara-restrictions": {
+    "id": "nara-restrictions",
+    "agency": "National Archives (via DCAT-US)",
+    "name": "NARA access restrictions vocabulary",
+    "namespace": "http://resources.data.gov/vocab/nara/",
+    "kinds": [
+      "OwlOntology",
+      "SkosScheme"
+    ],
+    "format": "turtle",
+    "triples": 331,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 404"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "namespace returned HTTP 404"
+      },
+      "R04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "not published on a .gov or .mil domain"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 331,
+        "example": null,
+        "info": "parsed 331 triples as turtle"
+      },
+      "P02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "Retrieved from raw.githubusercontent.com. The Content-Type and content negotiation behaviour are set by the code-hosting mirror, not by the publisher, so transport-level checks are not attributable to the publisher."
+      },
+      "L04": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 67,
+        "example": null,
+        "info": "S9: skos:ConceptScheme is disjoint with skos:Concept"
+      },
+      "L05": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 62,
+        "example": null,
+        "info": "S13: prefLabel, altLabel and hiddenLabel are pairwise disjoint"
+      },
+      "L06": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 67,
+        "example": null,
+        "info": "S14: no more than one prefLabel per language tag"
+      },
+      "L07": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S27: skos:related is disjoint with skos:broaderTransitive"
+      },
+      "L08": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S37: skos:Collection is disjoint with skos:Concept and skos:ConceptScheme"
+      },
+      "L09": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 0,
+        "example": null,
+        "info": "S46: skos:exactMatch is disjoint with skos:broadMatch and skos:relatedMatch"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 5,
+        "population": 6,
+        "example": "https://resources.data.gov/vocab/nara/AccessRestrictionStatusAuthorityList",
+        "info": "6/6 titled, 1/6 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "publisher or creator present"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "failed",
+        "affected": 0,
+        "population": null,
+        "example": null,
+        "info": "0 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no external vocabulary terms to resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": null,
+    "malformed_namespace_refs": [
+      "file:///Users/fabio/projects/semantic-asset-register/",
+      "file:///Users/fabio/projects/semantic-asset-register/AccessRestrictionStatusAuthorityList/",
+      "file:///Users/fabio/projects/semantic-asset-register/SecurityClassificationAuthorityList/",
+      "file:///Users/fabio/projects/semantic-asset-register/SpecificAccessRestrictionAuthorityList/",
+      "file:///Users/fabio/projects/semantic-asset-register/SpecificUseRestrictionAuthorityList/",
+      "file:///Users/fabio/projects/semantic-asset-register/UseRestrictionStatusAuthorityList/"
+    ]
+  },
+  "sweet": {
+    "id": "sweet",
+    "agency": "NASA JPL origin, ESIP maintained",
+    "name": "SWEET Earth and Environmental Terminology",
+    "namespace": "http://sweetontology.net/",
+    "kinds": [
+      "OwlOntology"
+    ],
+    "format": "turtle",
+    "triples": 244,
+    "note": null,
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served text/html under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "not published on a .gov or .mil domain"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 244,
+        "example": null,
+        "info": "parsed 244 triples as turtle"
+      },
+      "P02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "declared text/turtle (turtle), parsed as turtle"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D02": {
+        "outcome": "cantTell",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no terms found in the asset's declared namespace"
+      },
+      "D03": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 1,
+        "example": null,
+        "info": "1/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "licence or rights statement present"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "S02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no deprecated terms declared"
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 16,
+        "population": null,
+        "example": "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/contact",
+        "info": "16 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 16,
+        "example": null,
+        "info": "0 of 16 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": null,
+        "example": null,
+        "info": "outside OWL 2 DL: OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": {
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/contact": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/contactRole": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/creditRequired": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/hasResourceType": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/origVocDescriptiveName": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/origVocDocumentationUri": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/origVocManager": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/origVocUri": true,
+      "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/origVocVersionId": true,
+      "http://omv.ontoware.org/2005/05/ontology#description": true,
+      "http://omv.ontoware.org/2005/05/ontology#documentation": true,
+      "http://omv.ontoware.org/2005/05/ontology#hasContributor": true,
+      "http://omv.ontoware.org/2005/05/ontology#hasCreator": true,
+      "http://omv.ontoware.org/2005/05/ontology#keywords": true,
+      "http://omv.ontoware.org/2005/05/ontology#name": true,
+      "http://omv.ontoware.org/2005/05/ontology#reference": true
+    },
+    "malformed_namespace_refs": []
+  },
+  "nci-thesaurus": {
+    "id": "nci-thesaurus",
+    "agency": "National Cancer Institute",
+    "name": "NCI Thesaurus OWL",
+    "namespace": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#",
+    "kinds": [
+      "OwlOntology"
+    ],
+    "format": "xml",
+    "triples": 10855010,
+    "note": "zip member Thesaurus.owl of 1",
+    "results": {
+      "R01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "HTTP 200"
+      },
+      "R03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "served text/html under an RDF Accept header"
+      },
+      "R04": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "plain HTTP redirects to HTTPS"
+      },
+      "P03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": null
+      },
+      "P01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": 10855010,
+        "example": null,
+        "info": "parsed 10855010 triples as xml"
+      },
+      "P02": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "delivered as archive (application/zip)"
+      },
+      "L04": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L05": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L06": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L07": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L08": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "L09": {
+        "outcome": "inapplicable",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "asset declares no SKOS concepts or schemes"
+      },
+      "D01": {
+        "outcome": "failed",
+        "affected": 2,
+        "population": 212719,
+        "example": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#default",
+        "info": null
+      },
+      "D02": {
+        "outcome": "failed",
+        "affected": 212716,
+        "population": 212719,
+        "example": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156644",
+        "info": null
+      },
+      "D03": {
+        "outcome": "failed",
+        "affected": 1,
+        "population": 1,
+        "example": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "info": "0/1 titled, 1/1 described"
+      },
+      "G01": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no dcterms:license, dcterms:rights, dc:rights or cc:license triple anywhere in the payload"
+      },
+      "G02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "version or dated metadata present"
+      },
+      "G03": {
+        "outcome": "failed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "no publisher or creator named in the payload"
+      },
+      "S01": {
+        "outcome": "failed",
+        "affected": 5614,
+        "population": 5614,
+        "example": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43698",
+        "info": null
+      },
+      "S02": {
+        "outcome": "failed",
+        "affected": 16661,
+        "population": 5614,
+        "example": "N9d01ea6d1b284fb0a05c9c1fcd71f2d8",
+        "info": null
+      },
+      "I01": {
+        "outcome": "passed",
+        "affected": 3,
+        "population": null,
+        "example": "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
+        "info": "3 distinct external vocabulary terms referenced"
+      },
+      "I02": {
+        "outcome": "passed",
+        "affected": 0,
+        "population": 3,
+        "example": null,
+        "info": "0 of 3 referenced external terms did not resolve"
+      },
+      "L01": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "within OWL 2 DL"
+      },
+      "L02": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK found the ontology consistent"
+      },
+      "L03": {
+        "outcome": "passed",
+        "affected": null,
+        "population": null,
+        "example": null,
+        "info": "ELK reported no unsatisfiable classes"
+      }
+    },
+    "external_namespaces": {
+      "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage": true,
+      "http://protege.stanford.edu/plugins/owl/protege#readOnly": true,
+      "http://www.geneontology.org/formats/oboInOwl#hasDbXref": true
+    },
+    "malformed_namespace_refs": []
+  }
+}

@@ -1,5 +1,7 @@
 # Semantic Asset Register
 
+[![CI](https://github.com/fabio-rovai/semantic-asset-register/actions/workflows/ci.yml/badge.svg)](https://github.com/fabio-rovai/semantic-asset-register/actions/workflows/ci.yml)
+
 **A reproducible, evidence-based quality assessment of the vocabularies and
 ontologies published by US federal agencies.**
 
@@ -12,6 +14,7 @@ right of reply.
 - Results: [`docs/SCORECARD.md`](docs/SCORECARD.md)
 - What was built and what could not be obtained: [`BUILD_REPORT.md`](BUILD_REPORT.md)
 - Raw findings as RDF: [`results/findings.ttl`](results/findings.ttl)
+- Write-up: [gov.tesseract.academy/research/semantic-asset-register](https://gov.tesseract.academy/research/semantic-asset-register)
 
 ## Why this exists
 
